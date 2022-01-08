@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import "./App.css";
+import LikeButton from "./components/Like";
 
 function App() {
   return (
@@ -8,18 +8,6 @@ function App() {
         <LikeButton />
       </header>
     </div>
-  );
-}
-
-function LikeButton() {
-  const [count, setCount] = useState(999);
-  const handleClick = () => {
-    setCount(count + 1);
-  };
-  return (
-    <span className="likeButton" onClick={handleClick}>
-      ♡{count}
-    </span>
   );
 }
 
