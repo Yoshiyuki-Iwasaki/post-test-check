@@ -1,23 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Like render 1`] = `
-<DocumentFragment>
-  <span
-    class="likeButton"
-    data-testid="counter"
-  >
-    0
-  </span>
-</DocumentFragment>
-`;
-
 exports[`Like テスト render 1`] = `
 <DocumentFragment>
-  <span
-    class="likeButton"
-    data-testid="counter"
+  <button
+    class="sc-bdvvtL caPMGC"
+    data-testid="like"
   >
     0
-  </span>
+  </button>
 </DocumentFragment>
 `;

@@ -2,17 +2,17 @@ import React from 'react'
 import Like from './Like'
 import styled from "styled-components";
 
-const Main = styled.div`
+const Main = styled.li`
   background: #fff;
-  border-radius: 5px;
-  position: fixed;
-  width: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-bottom: 1px solid gray;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
 `;
 const Inner = styled.div`
-  padding: 15px 15px 50px 15px;
+  padding: 15px 50px 50px 15px;
   display: flex;
 `;
 const AvatarInfo = styled.div`
@@ -46,8 +46,7 @@ const Content = styled.p`
   line-height: 1.4;
 `;
 
-const PostItem = () => {
-
+const PostItem = ({ data }: any) => {
   return (
     <>
       <Main>
@@ -57,18 +56,16 @@ const PostItem = () => {
           </AvatarInfo>
           <PostContent>
             <UserInfo>
-              <UserName>iwasakiii</UserName>
-              <Date>1月6日</Date>
+              <UserName>{data.username}</UserName>
+              <Date>{data.date}</Date>
             </UserInfo>
-            <Content>
-              投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容
-            </Content>
+            <Content>{data.content}</Content>
           </PostContent>
         </Inner>
         <Like />
       </Main>
     </>
   );
-}
+};
 
 export default PostItem

@@ -17,9 +17,11 @@ describe("Like テスト", () => {
   // Click テスト
   test("Click テスト", () => {
     const component = render(<Like />);
-    const button = component.getByTestId("counter");
-    fireEvent.click(button);
-    fireEvent.click(button);
-    screen.getByText("2");
+    const likedButton = component.getByTestId("like");
+    fireEvent.click(likedButton);
+    screen.getByText("1");
+    const unlikedButton = component.getByTestId("unlike");
+    fireEvent.click(unlikedButton);
+    screen.getByText("0");
   });
 });
