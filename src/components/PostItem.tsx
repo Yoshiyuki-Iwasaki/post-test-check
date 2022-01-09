@@ -57,8 +57,8 @@ const PostItem = () => {
           </AvatarInfo>
           <PostContent>
             <UserInfo>
-              <UserName>ユーザー名</UserName>
-              <Date>日付</Date>
+              <UserName>iwasakiii</UserName>
+              <Date>1月6日</Date>
             </UserInfo>
             <Content>
               投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容
