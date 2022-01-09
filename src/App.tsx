@@ -1,13 +1,19 @@
-import "./App.css";
-import Like from "./components/Like";
+import PostItem from "./components/PostItem";
+import styled from "styled-components";
+
+const Main = styled.div`
+  background: #282c34;
+  height: 100vh;
+  width: 100vw;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Like />
-      </header>
-    </div>
+    <>
+      <Main>
+        <PostItem />
+      </Main>
+    </>
   );
 }
 

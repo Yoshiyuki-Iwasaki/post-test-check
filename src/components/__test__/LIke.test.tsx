@@ -3,6 +3,7 @@ import "@testing-library/jest-dom/extend-expect";
 import Like from "../Like";
 
 describe("Like テスト", () => {
+
   afterEach(() => {
     cleanup();
   });
