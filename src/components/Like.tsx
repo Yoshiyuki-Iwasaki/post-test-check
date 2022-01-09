@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 
-const LikeButton = () => {
+const Like = () => {
   const [count, setCount] = useState<number>(0);
   const handleClick = () => {
     setCount(count + 1);
   };
   return (
-    <span className="likeButton" onClick={handleClick}>
-      ♡{count}
+    <span
+      data-testid="counter"
+      className="likeButton"
+      onClick={handleClick}
+    >
+      {count}
     </span>
   );
-}
+};
 
-export default LikeButton;
+export default Like;

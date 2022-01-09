@@ -1,11 +1,11 @@
 import "./App.css";
-import LikeButton from "./components/Like";
+import Like from "./components/Like";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <LikeButton />
+        <Like />
       </header>
     </div>
   );
