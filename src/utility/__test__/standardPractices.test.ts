@@ -5,7 +5,7 @@ import {
   callErrorFun,
   callErrorAsyncFun,
   callConsoleLog,
-} from "./standardPractices";
+} from "../standardPractices";
 
 describe("functionを読み込んで使う", () => {
   it("1たす8は9になる関数で実行します", () => {
@@ -14,7 +14,7 @@ describe("functionを読み込んで使う", () => {
 });
 
 // requireを使う場合
-const standardPractice = require("./standardPractices");
+const standardPractice = require("../standardPractices");
 describe("classを読み込んで使う", () => {
   it("9たす23は32になるようなClac Classで実行します", () => {
     const calc = new standardPractice.Calc(9);
