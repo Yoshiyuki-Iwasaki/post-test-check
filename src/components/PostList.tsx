@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
 import PostItem from './PostItem'
 import PostInput from "./PostInput";
 import styled from "styled-components";
@@ -14,12 +14,21 @@ const Main = styled.ul`
 `;
 
 const PostList = () => {
+  const [postDate, setPostDate] = useState<any>([]);
+
+  useEffect(() => {
+    setPostDate(data);
+  }, []);
+
   return (
     <>
-      <PostInput />
+      <PostInput
+        postDate={postDate}
+        setPostDate={setPostDate}
+      />
       <Main>
-        {data &&
-          data.map((data: any, index: number) => (
+        {postDate &&
+          postDate.map((data: any, index: number) => (
             <PostItem key={index} data={data} />
           ))}
       </Main>

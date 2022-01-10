@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styled from "styled-components";
-import data from "../data.json";
 
 const Form = styled.form`
   margin: 0 auto;
@@ -12,25 +11,36 @@ const Input = styled.input`
   height: 80px;
 `;
 
-const PostInput = () => {
-  const [content, setContent] = useState<string>('');
+const PostInput = ({ postDate, setPostDate }: any) => {
+  const [content, setContent] = useState<string>("");
 
   const handleInput = (e: any) => {
     e.preventDefault();
-    console.log('test');
+    console.log("test");
+    console.log("content", content);
+    setContent(e.target.value);
   };
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    setContent('');
-    // data.push
-    console.log("test");
+    if (!content) return;
+    setPostDate([
+      ...postDate,
+      {
+        id: postDate.length + 1,
+        username: `username${postDate.length + 1}`,
+        date: "date",
+        content: content,
+      },
+    ]);
+    setContent("");
   };
 
   return (
-    <Form onSubmit={e => handleSubmit(e)}>
-      <Input type="text" onClick={e => handleInput(e)} />
+    <Form onSubmit={handleSubmit}>
+      <Input value={content} type="text" onChange={handleInput} />
     </Form>
   );
-}
+};
 
 export default PostInput
