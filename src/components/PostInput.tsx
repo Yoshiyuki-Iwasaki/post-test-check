@@ -4,7 +4,7 @@ import data from "../data.json";
 
 const Form = styled.form`
   margin: 0 auto;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   width: 400px;
 `;
 const Input = styled.input`
