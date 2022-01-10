@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "username": "username01",
-        "date": "date01",
+        "username": "username1",
+        "date": "date1",
         "content": "投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容"
     },
     {
         "id": 2,
-        "username": "username02",
-        "date": "date02",
+        "username": "username2",
+        "date": "date2",
         "content": "投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容"
     },
     {
         "id": 3,
-        "username": "username03",
-        "date": "date03",
+        "username": "username3",
+        "date": "date3",
         "content": "投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容"
     }
 ]
