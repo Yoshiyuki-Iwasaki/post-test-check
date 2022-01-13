@@ -7,7 +7,6 @@ import data from '../data.json';
 const Main = styled.ul`
   margin: 20px auto 0;
   background: #fff;
-  width: 400px;
   height: 600px;
   overflow: scroll;
 }
