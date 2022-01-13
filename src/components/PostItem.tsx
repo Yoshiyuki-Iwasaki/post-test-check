@@ -1,6 +1,7 @@
-import React from 'react'
 import Like from './Like'
 import styled from "styled-components";
+import { postDataType } from "../type/data";
+import React from 'react';
 
 const Main = styled.li`
   background: #fff;
@@ -46,7 +47,11 @@ const Content = styled.p`
   line-height: 1.4;
 `;
 
-const PostItem = ({ data }: any) => {
+type dataType = {
+  data: postDataType;
+};
+
+const PostItem: React.FC<dataType> = ({ data }) => {
   return (
     <>
       <Main>

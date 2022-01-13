@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import styled from "styled-components";
+import { postDataType } from "../type/data";
 
 const Form = styled.form`
   margin: 0 auto;
@@ -11,17 +12,22 @@ const Input = styled.input`
   height: 80px;
 `;
 
-const PostInput = ({ postDate, setPostDate }: any) => {
+type PostInputType = {
+  postDate: postDataType[];
+  setPostDate: any;
+};
+
+const PostInput: React.FC<PostInputType> = ({ postDate, setPostDate }) => {
   const [content, setContent] = useState<string>("");
 
-  const handleInput = (e: any) => {
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     console.log("test");
     console.log("content", content);
     setContent(e.target.value);
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!content) return;
     setPostDate([
