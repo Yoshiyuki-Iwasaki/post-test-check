@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react"
 import "@testing-library/jest-dom/extend-expect";
 import Like from "../Like";
 
-describe("Like テスト", () => {
+describe("いいね機能テスト", () => {
 
   afterEach(() => {
     cleanup();
