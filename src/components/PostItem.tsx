@@ -13,7 +13,7 @@ const Main = styled.li`
     border-bottom: none;
   }
 `;
-const Inner = styled.div`
+const Inner = styled(Link)`
   padding: 15px 50px 50px 15px;
   display: flex;
 `;
@@ -56,13 +56,13 @@ const PostItem: React.FC<dataType> = ({ data }) => {
   return (
     <>
       <Main>
-        <Inner>
+        <Inner to="/post">
           <AvatarInfo>
             <Avatar></Avatar>
           </AvatarInfo>
           <PostContent>
             <UserInfo>
-              <UserName to="/user/id/">{data.username}</UserName>
+              <UserName to="/user">{data.username}</UserName>
               <Date>{data.date}</Date>
             </UserInfo>
             <Content>{data.content}</Content>
