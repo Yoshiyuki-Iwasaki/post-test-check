@@ -13,7 +13,7 @@ const Main = styled.li`
     border-bottom: none;
   }
 `;
-const Inner = styled.div`
+const Inner = styled(Link)`
   padding: 15px 50px 50px 15px;
   display: flex;
 `;

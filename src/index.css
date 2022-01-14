@@ -21,3 +21,9 @@ h1,h2,h3,h4,p,ul,div,input {
 li {
   list-style: none;
 }
+
+
+a {
+  text-decoration: none;
+  color: #000;
+}
