@@ -1,14 +1,12 @@
-import PostList from "./components/PostList";
-import Sidebar from "./components/Sidebar";
 import styled from "styled-components";
+import Top from "./page/Top";
+import Post from "./page/Post";
+import User from "./page/User";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Main = styled.div`
   background: #282c34;
   height: 100vh;
-`;
-const Content = styled.div`
-  margin: 0 auto;
-  width: 400px;
 `;
 const Inner = styled.div`
   margin: 0 auto;
@@ -16,23 +14,19 @@ const Inner = styled.div`
   max-width: 1000px;
   position: relative;
 `;
-const Title = styled.h1`
-  padding-top: 20px;
-  text-align:center;
-  font-size: 22px;
-  color: #fff;
-`;
 
 function App() {
   return (
     <>
       <Main>
         <Inner>
-          <Sidebar />
-          <Content>
-            <Title>Post-Test-Check</Title>
-            <PostList />
-          </Content>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Top />} />
+              <Route path="/user" element={<User />} />
+              <Route path="/post" element={<Post />} />
+            </Routes>
+          </BrowserRouter>
         </Inner>
       </Main>
     </>
