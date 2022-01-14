@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react'
 import PostItem from './PostItem'
 import PostInput from "./PostInput";
 import styled from "styled-components";
-import data from '../data.json';
+import data from "../postData.json";
 import { postDataType } from "../type/data";
 
 const Main = styled.ul`
