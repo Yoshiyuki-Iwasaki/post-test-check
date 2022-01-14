@@ -2,6 +2,7 @@ import Like from './Like'
 import styled from "styled-components";
 import { postDataType } from "../type/data";
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Main = styled.li`
   background: #fff;
@@ -33,7 +34,7 @@ const UserInfo = styled.div`
   display: flex;
   align-items: center;
 `;
-const UserName = styled.p`
+const UserName = styled(Link)`
   font-size: 15px;
   font-weight: 700;
 `;
@@ -61,7 +62,7 @@ const PostItem: React.FC<dataType> = ({ data }) => {
           </AvatarInfo>
           <PostContent>
             <UserInfo>
-              <UserName>{data.username}</UserName>
+              <UserName to="/user/id/">{data.username}</UserName>
               <Date>{data.date}</Date>
             </UserInfo>
             <Content>{data.content}</Content>
