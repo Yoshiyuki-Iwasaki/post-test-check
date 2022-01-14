@@ -8,7 +8,7 @@ import { postDataType } from "../type/data";
 const Main = styled.ul`
   margin: 20px auto 0;
   background: #fff;
-  height: 600px;
+  height: calc(100vh - 200px);
   overflow: scroll;
 }`;
 
