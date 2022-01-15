@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 const Main = styled.div`
   padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 20px;
   width: 250px;
-  transform: translate(0, -50%);
   background: #fff;
   box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
 }`;
 const Icon = styled.p`
   margin: 0 auto;
