@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Like テスト render 1`] = `
+exports[`<Like> Snapshotは問題ないか 1`] = `
 <DocumentFragment>
   <button
     class="sc-bdvvtL caPMGC"
