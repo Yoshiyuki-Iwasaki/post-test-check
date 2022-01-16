@@ -12,7 +12,7 @@ const Inner = styled.div`
 `;
 
 const Title = styled.h1`
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: center;
   font-size: 22px;
   color: #fff;

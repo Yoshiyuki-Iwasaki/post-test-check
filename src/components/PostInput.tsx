@@ -5,7 +5,6 @@ import useInput from "../hooks/useInput";
 
 const Form = styled.form`
   margin: 0 auto;
-  padding: 20px 0 0 0;
   width: 400px;
 `;
 const Input = styled.input`
@@ -20,9 +19,6 @@ type PostInputType = {
 
 const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
   const attrs = useInput("");
-
-  console.log('attrs', attrs);
-  console.log('attrs.value', attrs.value);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
