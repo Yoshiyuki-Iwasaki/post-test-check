@@ -1,6 +1,5 @@
 import Like from './Like'
 import styled from "styled-components";
-import { postDataType } from "../type/data";
 import React from 'react';
 import { Link } from "react-router-dom";
 
@@ -54,11 +53,6 @@ const RemoveButton = styled.button`
   z-index: 5;
   font-size: 14px;
 `;
-
-type dataType = {
-  data: postDataType;
-  postData:any;
-};
 
 const PostItem: React.FC<any> = ({ data, postData, setPostData }) => {
   const handleRemove = () => {
