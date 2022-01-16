@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from "styled-components";
 import { postDataType } from "../type/data";
+import useInput from "../hooks/useInput";
 
 const Form = styled.form`
   margin: 0 auto;
@@ -13,38 +14,33 @@ const Input = styled.input`
 `;
 
 type PostInputType = {
-  postDate: postDataType[];
-  setPostDate: any;
+  postData: postDataType[];
+  setPostData: any;
 };
 
-const PostInput: React.FC<PostInputType> = ({ postDate, setPostDate }) => {
-  const [content, setContent] = useState<string>("");
+const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
+  const attrs = useInput("");
 
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    console.log("test");
-    console.log("content", content);
-    setContent(e.target.value);
-  };
+  console.log('attrs', attrs);
+  console.log('attrs.value', attrs.value);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!content) return;
-    setPostDate([
-      ...postDate,
+    if (!attrs.value) return;
+    setPostData([
+      ...postData,
       {
-        id: postDate.length + 1,
-        username: `username${postDate.length + 1}`,
+        id: postData.length + 1,
+        username: `username${postData.length + 1}`,
         date: "date",
-        content: content,
+        content: attrs.value,
       },
     ]);
-    setContent("");
   };
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Input value={content} type="text" onChange={handleInput} />
+      <Input type="text" {...attrs} />
     </Form>
   );
 };

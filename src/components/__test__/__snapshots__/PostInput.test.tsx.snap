@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostInput> Snapshotは問題ないか 1`] = `
+<DocumentFragment>
+  <form
+    class="sc-bdvvtL jApnZM"
+  >
+    <input
+      class="sc-gsDKAQ cnUKyX"
+      type="text"
+      value=""
+    />
+  </form>
+</DocumentFragment>
+`;

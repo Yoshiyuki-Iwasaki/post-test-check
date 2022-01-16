@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostList> Snapshotは問題ないか 1`] = `
+<DocumentFragment>
+  <form
+    class="sc-jrQzAO jAVXgP"
+  >
+    <input
+      class="sc-kDTinF hQVfki"
+      type="text"
+      value=""
+    />
+  </form>
+  <ul
+    class="sc-iqseJM cytntT"
+  >
+    <li
+      class="sc-gsDKAQ cAoxjG"
+    >
+      <div
+        class="sc-dkPtRN hvIKIu"
+      >
+        <div
+          class="sc-hKwDye iqWrVV"
+        >
+          <span
+            class="sc-eCImPb ezjWWd"
+          />
+        </div>
+        <div
+          class="sc-jRQBWg elvELz"
+        >
+          <div
+            class="sc-gKclnd fVLuFs"
+          >
+            <p
+              class="sc-iCfMLu kTZGvT"
+            >
+              username1
+            </p>
+            <p
+              class="sc-furwcr eSrJdJ"
+            >
+              date1
+            </p>
+          </div>
+          <p
+            class="sc-pVTFL djKbWE"
+          >
+            投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容
+          </p>
+        </div>
+      </div>
+      <button
+        class="sc-bdvvtL caPMGC"
+        data-testid="like"
+      >
+        0
+      </button>
+    </li>
+    <li
+      class="sc-gsDKAQ cAoxjG"
+    >
+      <div
+        class="sc-dkPtRN hvIKIu"
+      >
+        <div
+          class="sc-hKwDye iqWrVV"
+        >
+          <span
+            class="sc-eCImPb ezjWWd"
+          />
+        </div>
+        <div
+          class="sc-jRQBWg elvELz"
+        >
+          <div
+            class="sc-gKclnd fVLuFs"
+          >
+            <p
+              class="sc-iCfMLu kTZGvT"
+            >
+              username2
+            </p>
+            <p
+              class="sc-furwcr eSrJdJ"
+            >
+              date2
+            </p>
+          </div>
+          <p
+            class="sc-pVTFL djKbWE"
+          >
+            投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容
+          </p>
+        </div>
+      </div>
+      <button
+        class="sc-bdvvtL caPMGC"
+        data-testid="like"
+      >
+        0
+      </button>
+    </li>
+    <li
+      class="sc-gsDKAQ cAoxjG"
+    >
+      <div
+        class="sc-dkPtRN hvIKIu"
+      >
+        <div
+          class="sc-hKwDye iqWrVV"
+        >
+          <span
+            class="sc-eCImPb ezjWWd"
+          />
+        </div>
+        <div
+          class="sc-jRQBWg elvELz"
+        >
+          <div
+            class="sc-gKclnd fVLuFs"
+          >
+            <p
+              class="sc-iCfMLu kTZGvT"
+            >
+              username3
+            </p>
+            <p
+              class="sc-furwcr eSrJdJ"
+            >
+              date3
+            </p>
+          </div>
+          <p
+            class="sc-pVTFL djKbWE"
+          >
+            投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容
+          </p>
+        </div>
+      </div>
+      <button
+        class="sc-bdvvtL caPMGC"
+        data-testid="like"
+      >
+        0
+      </button>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

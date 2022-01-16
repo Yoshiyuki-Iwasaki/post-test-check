@@ -1,20 +1,19 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import PostInput from "../PostInput";
+import data from "../../postData.json";
 
-describe("PostInput 機能テスト", () => {
-  afterEach(() => {
-    cleanup();
-  });
-
-  // Snapshot テスト
-  test("render", () => {
-    const { asFragment } = render(<PostInput />);
+describe("<PostInput>", () => {
+  const props = {
+    postData: data,
+    setPostData: jest.fn(),
+  };
+  test("Snapshotは問題ないか", () => {
+    const { asFragment } = render(<PostInput {...props} />);
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Submit テスト
-  test("Submit テスト", () => {
-    const component = render(<PostInput />);
-  });
+  // test("Submit問題ないか", () => {
+  //   const component = render(<PostInput {...props} />);
+  // });
 });
