@@ -45,9 +45,13 @@ const UserDetail = ({ userDate }: any) => {
       <Username>{userDate && userDate.username}</Username>
       <FollowArea>
         {followState ? (
-          <FollowButton onClick={handleUnFollow}>フォロー削除</FollowButton>
+          <FollowButton data-testid="unfollow" onClick={handleUnFollow}>
+            フォロー削除
+          </FollowButton>
         ) : (
-          <FollowButton onClick={handleFollow}>フォロー</FollowButton>
+          <FollowButton data-testid="follow" onClick={handleFollow}>
+            フォロー
+          </FollowButton>
         )}
       </FollowArea>
       <Description>{userDate && userDate.description}</Description>
