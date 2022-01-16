@@ -55,6 +55,7 @@ const RemoveButton = styled.button`
 `;
 
 const PostItem: React.FC<any> = ({ data, postData, setPostData }) => {
+
   const handleRemove = () => {
     const result = window.confirm('本当にこの投稿を削除しますか。');
     if (result) {
