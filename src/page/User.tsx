@@ -6,11 +6,7 @@ import UserDetail from "../components/UserDetail";
 const Main = styled.div`
   margin: 0 auto;
   padding: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
   width: 200px;
-  transform: translate(-50%, -50%);
   background: #fff;
 `;
 

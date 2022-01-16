@@ -18,12 +18,22 @@ const Description = styled.p`
   margin-top: 10px;
   font-size: 14px;
 `;
+const FollowArea = styled.div`
+  margin-top: 10px;
+  text-align: center;
+`;
+const FollowButton = styled.button`
+  font-size: 14px;
+`;
 
 const UserDetail = ({ userDate }: any) => {
   return (
     <>
       <Icon></Icon>
       <Username>{userDate && userDate.username}</Username>
+      <FollowArea>
+        <FollowButton>フォロー</FollowButton>
+      </FollowArea>
       <Description>{userDate && userDate.description}</Description>
     </>
   );
