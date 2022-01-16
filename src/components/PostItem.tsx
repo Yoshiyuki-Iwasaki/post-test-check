@@ -47,15 +47,32 @@ const Content = styled.p`
   font-size: 14px;
   line-height: 1.4;
 `;
+const RemoveButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  font-size: 14px;
+`;
 
 type dataType = {
   data: postDataType;
+  postData:any;
 };
 
-const PostItem: React.FC<dataType> = ({ data }) => {
+const PostItem: React.FC<any> = ({ data, postData, setPostData }) => {
+  const handleRemove = () => {
+    const result = window.confirm('本当にこの投稿を削除しますか。');
+    if (result) {
+      const fixedData = [...postData];
+      fixedData.splice(data.id, 1);
+      setPostData(fixedData);
+    }
+  };
   return (
     <>
       <Main>
+        <RemoveButton onClick={handleRemove}>削除</RemoveButton>
         <Inner to="/post">
           <AvatarInfo>
             <Avatar></Avatar>

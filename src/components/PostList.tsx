@@ -13,19 +13,19 @@ const Main = styled.ul`
 }`;
 
 const PostList: React.FC = () => {
-  const [postDate, setPostDate] = useState<postDataType[]>([]);
+  const [postData, setPostData] = useState<postDataType[]>([]);
 
   useEffect(() => {
-    setPostDate(data);
+    setPostData(data);
   }, []);
 
   return (
     <>
-      <PostInput postDate={postDate} setPostDate={setPostDate} />
+      <PostInput postData={postData} setPostData={setPostData} />
       <Main>
-        {postDate &&
-          postDate.map((data: postDataType, index: number) => (
-            <PostItem key={index} data={data} />
+        {postData &&
+          postData.map((data: postDataType, index: number) => (
+            <PostItem key={index} postData={postData} setPostData={setPostData} data={data} />
           ))}
       </Main>
     </>
