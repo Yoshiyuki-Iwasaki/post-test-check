@@ -1,17 +1,16 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import UserDetail from '../UserDetail';
+import Follow from '../Follow';
 
-describe('<UserDetail>', () => {
-
+describe('<Follow>', () => {
   test('フォローする前の状態は問題ないか', () => {
-    const component = render(<UserDetail />);
+    const component = render(<Follow />);
     const followButton = component.getByTestId('follow');
     screen.getByText('フォロー');
   });
 
   test('フォローしたら状態は変わるか', () => {
-    const component = render(<UserDetail />);
+    const component = render(<Follow />);
     const followButton = component.getByTestId('follow');
     fireEvent.click(followButton);
     screen.getByText('フォロー削除');
@@ -21,7 +20,7 @@ describe('<UserDetail>', () => {
   });
 
   test('Snapshotは問題ないか', () => {
-    const { asFragment } = render(<UserDetail />);
+    const { asFragment } = render(<Follow />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
