@@ -12,8 +12,4 @@ describe("<PostInput>", () => {
     const { asFragment } = render(<PostInput {...props} />);
     expect(asFragment()).toMatchSnapshot();
   });
-
-  // test("Submit問題ないか", () => {
-  //   const component = render(<PostInput {...props} />);
-  // });
 });
