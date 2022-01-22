@@ -1,7 +1,7 @@
-import Like from './Like'
-import styled from "styled-components";
+import Like from './Like';
+import styled from 'styled-components';
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Main = styled.li`
   background: #fff;
@@ -55,7 +55,6 @@ const RemoveButton = styled.button`
 `;
 
 const PostItem: React.FC<any> = ({ data, postData, setPostData }) => {
-
   const handleRemove = () => {
     const result = window.confirm('本当にこの投稿を削除しますか。');
     if (result) {
@@ -86,4 +85,4 @@ const PostItem: React.FC<any> = ({ data, postData, setPostData }) => {
   );
 };
 
-export default PostItem
+export default PostItem;

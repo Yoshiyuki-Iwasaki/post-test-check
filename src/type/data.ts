@@ -1,5 +1,3 @@
-
-
 export type postDataType = {
   id: number;
   username: string;

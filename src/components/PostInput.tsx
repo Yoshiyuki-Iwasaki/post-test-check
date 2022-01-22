@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import styled from "styled-components";
-import { postDataType } from "../type/data";
-import useInput from "../hooks/useInput";
+import styled from 'styled-components';
+import { postDataType } from '../type/data';
 
 const Form = styled.form`
   margin: 0 auto;
@@ -20,7 +19,7 @@ type PostInputType = {
 const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
   const [text, setText] = useState<string>('');
 
-  const handleInput = (e:any) => {
+  const handleInput = (e: any) => {
     setText(e.target.value);
   };
 
@@ -41,9 +40,14 @@ const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Input type="text" value={text} onChange={handleInput} />
+      <Input
+        type="text"
+        value={text}
+        onChange={handleInput}
+        placeholder="Enter"
+      />
     </Form>
   );
 };
 
-export default PostInput
+export default PostInput;

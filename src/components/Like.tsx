@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
 const LikeButton = styled.button<{ liked: boolean }>`
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   position: absolute;
-  background: ${({ liked }) => (liked ? "red" : "gray")};
+  background: ${({ liked }) => (liked ? 'red' : 'gray')};
   bottom: 8px;
   left: 70px;
   border-radius: 0.4rem;
@@ -15,7 +15,7 @@ const LikeButton = styled.button<{ liked: boolean }>`
 
   &:before {
     position: absolute;
-    content: "♡";
+    content: '♡';
     left: 5px;
     top: 50%;
     transform: translate(0, -50%);
