@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import Follow from './Follow';
 
 const Icon = styled.p`
@@ -21,7 +21,6 @@ const Description = styled.p`
 `;
 
 const UserDetail = ({ userDate }: any) => {
-
   return (
     <>
       <Icon></Icon>
@@ -32,4 +31,4 @@ const UserDetail = ({ userDate }: any) => {
   );
 };
 
-export default UserDetail
+export default UserDetail;

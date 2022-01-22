@@ -26,11 +26,11 @@ export async function addCalcAsyncFun(
 
 // エラーの発生を確認するテスト
 export function callErrorFun(): void {
-  throw new Error("error");
+  throw new Error('error');
 }
 
 export async function callErrorAsyncFun(): Promise<void> {
-  throw new Error("asyncError");
+  throw new Error('asyncError');
 }
 
 // 処理が呼ばれたかどうか確認するためのテスト

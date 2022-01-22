@@ -10,17 +10,17 @@ const FollowButton = styled.button`
 `;
 
 const Follow = () => {
-    const [followState, setFollowState] = useState(false);
+  const [followState, setFollowState] = useState(false);
 
-    const handleFollow = () => {
-      console.log('Follow');
-      setFollowState(true);
-    };
+  const handleFollow = () => {
+    console.log('Follow');
+    setFollowState(true);
+  };
 
-    const handleUnFollow = () => {
-      console.log('UnFollow');
-      setFollowState(false);
-    };
+  const handleUnFollow = () => {
+    console.log('UnFollow');
+    setFollowState(false);
+  };
   return (
     <FollowArea>
       {followState ? (
@@ -34,6 +34,6 @@ const Follow = () => {
       )}
     </FollowArea>
   );
-}
+};
 
-export default Follow
+export default Follow;

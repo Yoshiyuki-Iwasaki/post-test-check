@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Main = styled.div`
   padding: 10px;
@@ -43,6 +43,6 @@ const Sidebar = () => {
       </Description>
     </Main>
   );
-}
+};
 
-export default Sidebar
+export default Sidebar;

@@ -1,7 +1,7 @@
-import React from 'react'
-import PostItem from "../components/PostItem";
-import data from "../postData.json";
-import styled from "styled-components";
+import React from 'react';
+import PostItem from '../components/PostItem';
+import data from '../postData.json';
+import styled from 'styled-components';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -16,6 +16,6 @@ const Post = () => {
       </Content>
     </>
   );
-}
+};
 
-export default Post
+export default Post;
