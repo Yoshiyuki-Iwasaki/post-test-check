@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Follow from '../Follow';
+import Follow from './Follow';
 
 describe('<Follow>', () => {
   test('フォローする前の状態は問題ないか', () => {

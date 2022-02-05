@@ -1,5 +1,5 @@
 import React from 'react';
-import PostItem from '../components/PostItem';
+import PostItem from '../components/molecules/postItem/PostItem';
 import data from '../postData.json';
 import styled from 'styled-components';
 

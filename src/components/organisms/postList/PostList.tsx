@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import PostItem from './PostItem';
-import PostInput from './PostInput';
+import PostItem from '../../molecules/postItem/PostItem';
+import PostInput from '../../atoms/input/PostInput';
 import styled from 'styled-components';
-import data from '../postData.json';
-import { postDataType } from '../type/data';
+import data from '../../../postData.json';
+import { postDataType } from '../../../type/data';
 
 const Main = styled.ul`
   margin: 20px auto 0;

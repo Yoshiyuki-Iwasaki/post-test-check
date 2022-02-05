@@ -1,10 +1,10 @@
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import "@testing-library/jest-dom/extend-expect";
-import PostInput from "../PostInput";
-import data from "../../postData.json";
+import '@testing-library/jest-dom/extend-expect';
+import PostInput from './PostInput';
+import data from '../../../postData.json';
 
-describe("<PostInput>", () => {
+describe('<PostInput>', () => {
   const props = {
     postData: data,
     setPostData: jest.fn(),
@@ -17,7 +17,7 @@ describe("<PostInput>", () => {
     expect(inputValue.value).toBe('test');
   });
 
-  test("Snapshotは問題ないか", () => {
+  test('Snapshotは問題ないか', () => {
     const { asFragment } = render(<PostInput {...props} />);
     expect(asFragment()).toMatchSnapshot();
   });
