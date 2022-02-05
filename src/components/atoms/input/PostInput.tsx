@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { postDataType } from '../type/data';
+import { postDataType } from '../../../type/data';
 
 const Form = styled.form`
   margin: 0 auto;

@@ -1,9 +1,8 @@
-import { cleanup, fireEvent, render, screen } from "@testing-library/react"
-import "@testing-library/jest-dom/extend-expect";
-import Like from "../Like";
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+import Like from './Like';
 
-describe("<Like>", () => {
-
+describe('<Like>', () => {
   test('いいねする前の状態は問題ないか', () => {
     const component = render(<Like />);
     const likedButton = component.getByTestId('like');
@@ -20,7 +19,7 @@ describe("<Like>", () => {
     screen.getByText('0');
   });
 
-  test("Snapshotは問題ないか", () => {
+  test('Snapshotは問題ないか', () => {
     const { asFragment } = render(<Like />);
     expect(asFragment()).toMatchSnapshot();
   });

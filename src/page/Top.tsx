@@ -1,5 +1,5 @@
-import PostList from '../components/PostList';
-import Sidebar from '../components/Sidebar';
+import PostList from '../components/organisms/postList/PostList';
+import Sidebar from '../components/organisms/sidebar/Sidebar';
 import styled from 'styled-components';
 
 const Content = styled.div`

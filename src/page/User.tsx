@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from '../userData.json';
 import styled from 'styled-components';
-import UserDetail from '../components/UserDetail';
+import UserDetail from '../components/organisms/profile/Profile';
 
 const Main = styled.div`
   margin: 0 auto;
