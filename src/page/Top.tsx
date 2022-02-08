@@ -1,4 +1,4 @@
-import PostList from '../components/organisms/postList/PostList';
+import PostList from '../components/organisms/postList';
 import Sidebar from '../components/organisms/sidebar/Sidebar';
 import styled from 'styled-components';
 

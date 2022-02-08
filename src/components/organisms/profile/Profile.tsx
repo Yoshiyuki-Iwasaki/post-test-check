@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Follow from '../../atoms/follow/Follow';
+import Follow from '../../atoms/follow';
 
 const Icon = styled.p`
   margin: 0 auto;
