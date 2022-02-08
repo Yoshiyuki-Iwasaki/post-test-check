@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PostItem from '../../molecules/postItem/PostItem';
+import PostItem from '../../molecules/postItem';
 import PostInput from '../../atoms/input/PostInput';
 import styled from 'styled-components';
 import data from '../../../postData.json';
