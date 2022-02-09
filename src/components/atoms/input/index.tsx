@@ -1,32 +1,17 @@
 import React, { useState } from 'react';
-import { Form, Input } from './styles';
+import { Form, FormInput } from './styles';
 import { PostInputType } from './type';
+import { useForm } from './hooks';
 
-const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
-  const [text, setText] = useState<string>('');
-
-  const handleInput = (e: any) => {
-    setText(e.target.value);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!text) return;
-    setPostData([
-      ...postData,
-      {
-        id: postData.length + 1,
-        username: `username${postData.length + 1}`,
-        date: 'date',
-        content: text,
-      },
-    ]);
-    setText('');
-  };
+const Input: React.FC<PostInputType> = ({ postData, setPostData }) => {
+  const { text, handleInput, handleSubmit } = useForm({
+    postData,
+    setPostData,
+  });
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Input
+      <FormInput
         type="text"
         value={text}
         onChange={handleInput}
@@ -36,4 +21,4 @@ const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
   );
 };
 
-export default PostInput;
+export default Input;
