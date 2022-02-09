@@ -1,0 +1,14 @@
+
+
+{
+	"username": {
+		"default": "ユーザーネームが入ります。",
+		"group": "Content",
+		"label": "HTML Content"
+	},
+	"description": {
+		"default": "説明が入ります。説明が入ります。説明が入ります。",
+		"group": "Content",
+		"label": "Call to Action"
+	}
+}
