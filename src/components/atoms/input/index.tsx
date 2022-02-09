@@ -1,20 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { postDataType } from '../../../type/data';
-
-const Form = styled.form`
-  margin: 0 auto;
-  width: 400px;
-`;
-const Input = styled.input`
-  width: 100%;
-  height: 80px;
-`;
-
-type PostInputType = {
-  postData: postDataType[];
-  setPostData: any;
-};
+import { Form, Input } from './styles';
+import { PostInputType } from './type';
 
 const PostInput: React.FC<PostInputType> = ({ postData, setPostData }) => {
   const [text, setText] = useState<string>('');

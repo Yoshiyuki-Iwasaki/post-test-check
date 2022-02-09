@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PostInput = () => {
+const basicInput = () => {
   return <div></div>;
 };
 
-export default PostInput;
+export default basicInput;

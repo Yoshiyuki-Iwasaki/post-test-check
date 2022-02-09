@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PostItem from '../../molecules/postItem';
-import PostInput from '../../atoms/input/PostInput';
+import PostInput from '../../atoms/input';
 import data from '../../../postData.json';
 import { postDataType } from '../../../type/data';
 import { Main } from './styles';

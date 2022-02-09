@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
-import PostInput from './PostInput';
+import PostInput from '.';
 import data from '../../../postData.json';
 
 describe('<PostInput>', () => {
