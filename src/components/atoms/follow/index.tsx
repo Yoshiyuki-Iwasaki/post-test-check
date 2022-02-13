@@ -1,14 +1,10 @@
 import React from 'react';
-import { FollowButton } from './styles';
+import FollowPresenter from './presenter';
 import { useFollow } from './hooks';
 
 const Follow = () => {
   const { followState, handleFollow } = useFollow();
-  return (
-    <FollowButton data-testid="follow" onClick={handleFollow}>
-      {followState ? 'フォロー削除' : 'フォロー'}
-    </FollowButton>
-  );
+  return <FollowPresenter state={followState} method={handleFollow} />;
 };
 
 export default Follow;

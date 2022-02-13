@@ -26,13 +26,13 @@ const PostItem: React.FC<any> = ({ data, postData, setPostData }) => {
     <>
       <Main>
         <RemoveButton onClick={handleRemove}>削除</RemoveButton>
-        <Inner to="/post">
+        <Inner>
           <AvatarInfo>
             <Avatar></Avatar>
           </AvatarInfo>
           <PostContent>
             <UserInfo>
-              <UserName to="/user">{data.username}</UserName>
+              <UserName>{data.username}</UserName>
               <Date>{data.date}</Date>
             </UserInfo>
             <Content>{data.content}</Content>

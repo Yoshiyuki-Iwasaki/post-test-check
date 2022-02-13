@@ -10,7 +10,7 @@ export const Main = styled.li`
     border-bottom: none;
   }
 `;
-export const Inner = styled(Link)`
+export const Inner = styled.div`
   padding: 15px 50px 50px 15px;
   display: flex;
 `;
@@ -31,7 +31,7 @@ export const UserInfo = styled.div`
   display: flex;
   align-items: center;
 `;
-export const UserName = styled(Link)`
+export const UserName = styled.div`
   font-size: 15px;
   font-weight: 700;
 `;

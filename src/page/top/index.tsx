@@ -5,7 +5,7 @@ import { Content } from './style';
 const Top = () => {
   return (
     <>
-      <Sidebar />
+      <Sidebar username={'username'} description={'description'} />
       <Content>
         <PostList />
       </Content>
