@@ -5,6 +5,7 @@ export const Main = styled.li`
   background: #fff;
   border-bottom: 1px solid gray;
   position: relative;
+  width: 400px;
 
   &:last-child {
     border-bottom: none;

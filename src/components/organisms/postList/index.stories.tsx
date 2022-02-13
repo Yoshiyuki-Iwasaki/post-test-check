@@ -1,5 +1,6 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
+import data from '../../../postData.json';
 
 import PostList from './';
 

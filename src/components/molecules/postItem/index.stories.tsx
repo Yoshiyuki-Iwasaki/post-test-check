@@ -4,7 +4,7 @@ import data from '../../../postData.json';
 
 import PostItem from './';
 
-export const basicPostItem = () => <PostItem data={data} />;
+export const basicPostItem = () => <PostItem data={data[0]} />;
 
 export default {
   component: PostItem,
