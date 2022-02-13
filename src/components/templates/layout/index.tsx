@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Main = styled.div`
   background: #282c34;
@@ -20,7 +20,7 @@ const Title = styled.h1`
 
 const Content = styled.div``;
 
-const Layout = ({ children }:any) => {
+const Layout = ({ children }: any) => {
   return (
     <div>
       <Main>
@@ -33,4 +33,4 @@ const Layout = ({ children }:any) => {
   );
 };
 
-export default Layout
+export default Layout;
