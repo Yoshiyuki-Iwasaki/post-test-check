@@ -1,16 +1,8 @@
 import React from 'react';
-import Follow from '../../atoms/follow';
-import { Main, Icon, Username, Description } from './styles';
+import Presenter from './presenter';
 
-const UserDetail = ({ userDate }: any) => {
-  return (
-    <Main>
-      <Icon></Icon>
-      <Username>{userDate && userDate.username}</Username>
-      <Follow />
-      <Description>{userDate && userDate.description}</Description>
-    </Main>
-  );
+const Profile = ({ userDate }: any) => {
+  return <Presenter userDate={userDate} />;
 };
 
-export default UserDetail;
+export default Profile;

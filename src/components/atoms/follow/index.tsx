@@ -1,10 +1,10 @@
 import React from 'react';
-import FollowPresenter from './presenter';
+import Presenter from './presenter';
 import { useFollow } from './hooks';
 
 const Follow = () => {
   const { followState, handleFollow } = useFollow();
-  return <FollowPresenter state={followState} method={handleFollow} />;
+  return <Presenter state={followState} method={handleFollow} />;
 };
 
 export default Follow;

@@ -1,14 +1,8 @@
 import React from 'react';
-import { Main, Icon, UserName, Description } from './styles';
+import Presenter from './presenter';
 
 const Sidebar = ({ username, description }: any) => {
-  return (
-    <Main>
-      <Icon></Icon>
-      {username && <UserName>{username}</UserName>}
-      {description && <Description>{description}</Description>}
-    </Main>
-  );
+  return <Presenter username={username} description={description} />;
 };
 
 export default Sidebar;

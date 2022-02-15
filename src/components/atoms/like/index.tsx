@@ -1,14 +1,10 @@
-import { LikeButton } from './styles';
 import { useLike } from './hooks';
+import Presenter from './presenter';
 
 const Like = () => {
   const { count, liked, handleLike } = useLike();
 
-  return (
-    <LikeButton likedFlag={liked} data-testid="like" onClick={handleLike}>
-      {count}
-    </LikeButton>
-  );
+  return <Presenter count={count} liked={liked} handleLike={handleLike} />;
 };
 
 export default Like;

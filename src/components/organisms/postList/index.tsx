@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import PostItem from '../../molecules/postItem';
-import PostInput from '../../atoms/input';
 import data from '../../../postData.json';
 import { postDataType } from '../../../type/data';
-import { Main } from './styles';
+import Presenter from './presenter';
 
 const PostList: React.FC = () => {
   const [postData, setPostData] = useState<postDataType[]>([]);
@@ -12,22 +10,7 @@ const PostList: React.FC = () => {
     setPostData(data);
   }, []);
 
-  return (
-    <>
-      <PostInput postData={postData} setPostData={setPostData} />
-      <Main>
-        {postData &&
-          postData.map((data: postDataType, index: number) => (
-            <PostItem
-              key={index}
-              postData={postData}
-              setPostData={setPostData}
-              data={data}
-            />
-          ))}
-      </Main>
-    </>
-  );
+  return <Presenter postData={postData} setPostData={setPostData} />;
 };
 
 export default PostList;

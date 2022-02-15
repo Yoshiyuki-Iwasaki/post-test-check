@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Form, FormInput } from './styles';
 import { PostInputType } from './type';
 import { useForm } from './hooks';
+import Presenter from './presenter';
 
 const Input: React.FC<PostInputType> = ({ postData, setPostData }) => {
   const { text, handleInput, handleSubmit } = useForm({
@@ -10,14 +10,11 @@ const Input: React.FC<PostInputType> = ({ postData, setPostData }) => {
   });
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <FormInput
-        type="text"
-        value={text}
-        onChange={handleInput}
-        placeholder="Enter"
-      />
-    </Form>
+    <Presenter
+      text={text}
+      handleInput={handleInput}
+      handleSubmit={handleSubmit}
+    />
   );
 };
 
