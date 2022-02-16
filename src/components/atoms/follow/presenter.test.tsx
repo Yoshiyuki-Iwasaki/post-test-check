@@ -1,23 +1,22 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, act } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Follow from './presenter';
 
 describe('<Follow>', () => {
-  test('フォローする前の状態は問題ないか', () => {
-    screen.getByText('フォロー');
+  it('レンダリングされているか', () => {
+    const { getByTestId } = render(<Follow state={false} />);
+    const input = getByTestId('button');
+    expect(input).toBeTruthy();
   });
 
-  test('フォローしたら状態は変わるか', () => {
-    const component = render(<Follow />);
-    const followButton = component.getByTestId('button');
-    fireEvent.click(followButton);
-    screen.getByText('フォロー削除');
-    fireEvent.click(followButton);
-    screen.getByText('フォロー');
+  it('フォローする前の状態は問題ないか', () => {
+    const { getByTestId } = render(<Follow state={false} />);
+    const input = getByTestId('button');
+    expect(input.innerHTML).toBe('フォロー');
   });
 
-  test('Snapshotは問題ないか', () => {
-    const { asFragment } = render(<Follow />);
+  it('Snapshotは問題ないか', () => {
+    const { asFragment } = render(<Follow state={false} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

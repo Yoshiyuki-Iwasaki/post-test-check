@@ -1,24 +1,20 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
-import PostInput from './presenter';
+import Input from './presenter';
 import data from '../../../postData.json';
 
-describe('<PostInput>', () => {
-  const props = {
-    postData: data,
-    setPostData: jest.fn(),
-  };
+describe('Input Component', () => {
+  const props = {};
 
-  test('仮の入力値を設定可能かどうか', () => {
-    render(<PostInput {...props} />);
-    const inputValue: any = screen.getByPlaceholderText('Enter');
-    userEvent.type(inputValue, 'test');
-    expect(inputValue.value).toBe('test');
+  it('レンダリングされているか', () => {
+    const { getByTestId } = render(<Input />);
+    const input = getByTestId('input');
+    expect(input).toBeTruthy();
   });
 
-  test('Snapshotは問題ないか', () => {
-    const { asFragment } = render(<PostInput {...props} />);
+  it('Snapshotは問題ないか', () => {
+    const { asFragment } = render(<Input />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

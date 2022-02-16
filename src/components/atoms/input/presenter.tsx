@@ -6,6 +6,7 @@ const Presenter = ({ text, handleInput, handleSubmit }: any) => {
     <Form onSubmit={handleSubmit}>
       <FormInput
         type="text"
+        data-testid="input"
         value={text}
         onChange={handleInput}
         placeholder="Enter"

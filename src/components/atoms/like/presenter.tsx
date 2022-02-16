@@ -1,6 +1,6 @@
 import { LikeButton } from './styles';
 
-const Presenter = ({ count, liked, handleLike }: any) => {
+const Presenter = ({ count = 0, liked = false, handleLike }: any) => {
   return (
     <LikeButton likedFlag={liked} data-testid="like" onClick={handleLike}>
       {count}
