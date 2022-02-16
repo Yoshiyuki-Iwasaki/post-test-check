@@ -8,6 +8,7 @@ export const Inner = styled.div`
   margin: 0 auto;
   max-width: 1000px;
   position: relative;
+  /* display: flex; */
 `;
 
 export const Title = styled.h1`
