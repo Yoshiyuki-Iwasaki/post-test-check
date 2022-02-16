@@ -1,4 +1,3 @@
-import Like from '../../atoms/like';
 import React from 'react';
 import Presenter from './presenter';
 

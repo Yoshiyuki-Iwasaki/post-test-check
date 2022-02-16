@@ -1,15 +1,16 @@
 import React from 'react';
 import { Props } from './type';
+import { ButtonLayout } from './style';
 
 const Button: React.FC<Props> = ({
-  color = 'red',
+  color = '#fff',
   children,
   ...buttonProps
 }) => {
   return (
-    <button style={{ color }} {...buttonProps}>
+    <ButtonLayout style={{ color }} {...buttonProps}>
       {children}
-    </button>
+    </ButtonLayout>
   );
 };
 

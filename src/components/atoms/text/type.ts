@@ -1,4 +1,4 @@
 export type Props = {
-  fontSize: number;
+  fontSize?: number;
   color?: string;
 };

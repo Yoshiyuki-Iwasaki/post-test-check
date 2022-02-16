@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { PostInputType } from './type';
 import { useForm } from './hooks';
 import Presenter from './presenter';
