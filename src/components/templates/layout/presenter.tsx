@@ -1,9 +1,6 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Main, Inner, Title, Content } from './style';
-
-type LayoutType = {
-  children: ReactNode;
-};
+import { LayoutType } from './type';
 
 const Presenter: React.FC<LayoutType> = ({ children }) => {
   return (
