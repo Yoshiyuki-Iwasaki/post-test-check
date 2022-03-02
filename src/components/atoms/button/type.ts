@@ -1,5 +1,3 @@
 export type ButtonProps = React.HTMLAttributes<HTMLButtonElement>;
 
-export type Props = {
-  color?: string;
-} & ButtonProps;
+export type Props = {} & ButtonProps;

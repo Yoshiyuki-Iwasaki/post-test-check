@@ -2,16 +2,8 @@ import React from 'react';
 import { Props } from './type';
 import { ButtonLayout } from './style';
 
-const Button: React.FC<Props> = ({
-  color = '#fff',
-  children,
-  ...buttonProps
-}) => {
-  return (
-    <ButtonLayout style={{ color }} {...buttonProps}>
-      {children}
-    </ButtonLayout>
-  );
+const Button: React.FC<Props> = ({ children, ...buttonProps }) => {
+  return <ButtonLayout {...buttonProps}>{children}</ButtonLayout>;
 };
 
 export default Button;
