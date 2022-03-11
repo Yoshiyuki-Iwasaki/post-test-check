@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const LikeButton = styled.button<{ likedFlag: boolean }>`
-  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  position: absolute;
   background: ${({ likedFlag }) => (likedFlag ? 'red' : 'gray')};
+  bottom: 10px;
+  left: 20px;
   border-radius: 0.4rem;
   border: none;
   cursor: pointer;

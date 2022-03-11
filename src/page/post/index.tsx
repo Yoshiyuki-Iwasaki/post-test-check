@@ -5,11 +5,9 @@ import { Content } from './style';
 
 const Post = () => {
   return (
-    <>
-      <Content>
-        <PostItem data={data[0]} />
-      </Content>
-    </>
+    <Content>
+      <PostItem data={data[0]} />
+    </Content>
   );
 };
 

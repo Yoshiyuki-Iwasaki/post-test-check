@@ -6,10 +6,6 @@ export const Main = styled.li`
   border-bottom: 1px solid gray;
   position: relative;
   width: 400px;
-
-  &:last-child {
-    border-bottom: none;
-  }
 `;
 export const Inner = styled.div`
   padding: 15px 50px 50px 15px;
@@ -42,6 +38,7 @@ export const Date = styled.p`
   color: gray;
 `;
 export const Content = styled.p`
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.4;
 `;
