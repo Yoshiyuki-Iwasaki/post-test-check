@@ -13,23 +13,23 @@ import {
 } from './styles';
 import React from 'react';
 
-const Presenter: React.FC<any> = ({ data, handleRemove }) => {
+const Presenter: React.FC<any> = ({ postData, handleRemove }) => {
   return (
     <Main>
-      <RemoveButton onClick={handleRemove}>削除</RemoveButton>
+      <RemoveButton onClick={() => handleRemove()}>削除</RemoveButton>
       <Inner>
         <AvatarInfo>
           <Avatar></Avatar>
         </AvatarInfo>
         <PostContent>
           <UserInfo>
-            <UserName>{data.username}</UserName>
-            <Date>{data.date}</Date>
+            <UserName>{postData.username}</UserName>
+            <Date>{postData.date}</Date>
           </UserInfo>
-          <Content>{data.content}</Content>
+          <Content>{postData.content}</Content>
         </PostContent>
       </Inner>
-      <Like />
+      <Like postData={postData} />
     </Main>
   );
 };

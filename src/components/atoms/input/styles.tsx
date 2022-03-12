@@ -6,6 +6,7 @@ export const Form = styled.form`
 `;
 
 export const FormInput = styled.input`
+  padding: 5px;
   width: 100%;
-  height: 80px;
+  height: 50px;
 `;

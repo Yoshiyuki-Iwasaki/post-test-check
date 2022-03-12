@@ -12,7 +12,7 @@ const Presenter: React.FC<any> = ({ postData }) => {
       <Main>
         {postData &&
           postData.map((data: postDataType, index: number) => (
-            <PostItem key={index} postData={postData} data={data} />
+            <PostItem key={index} postData={data} />
           ))}
       </Main>
     </>

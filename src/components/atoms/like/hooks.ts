@@ -1,13 +1,10 @@
-import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { likeTask } from '../../../features/task/taskSlice';
 
-export const useLike = () => {
-  const [count, setCount] = useState<number>(0);
-  const [liked, setLiked] = useState<boolean>(false);
-
-  const handleLike = () => {
-    setLiked(!liked);
-    liked ? setCount(count - 1) : setCount(count + 1);
+export const useLike = ({ postData }: any) => {
+  const dispatch = useDispatch();
+  const handleLikes = () => {
+    dispatch(likeTask(postData));
   };
-
-  return { count, liked, handleLike };
+  return { handleLikes };
 };
