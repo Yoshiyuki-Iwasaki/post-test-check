@@ -1,15 +1,14 @@
 import React from 'react';
 import { Form, FormInput } from './styles';
 
-const Presenter = ({ text, handleInput, handleSubmit }: any) => {
+const Presenter = ({ register, handleCreate, handleSubmit }: any) => {
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit(handleCreate)}>
       <FormInput
         type="text"
         data-testid="input"
-        value={text}
-        onChange={handleInput}
-        placeholder="Enter"
+        placeholder={'New Task'}
+        {...register('taskTitle', { required: true })}
       />
     </Form>
   );

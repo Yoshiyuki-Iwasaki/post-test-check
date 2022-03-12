@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import data from '../../../postData.json';
-import { postDataType } from '../../../type/data';
+import React from 'react';
 import Presenter from './presenter';
+import { useSelector } from 'react-redux';
+import { selectsTasks } from '../../../features/task/taskSlice';
 
 const PostList: React.FC = () => {
-  const [postData, setPostData] = useState<postDataType[]>([]);
+  const postData = useSelector(selectsTasks);
 
-  useEffect(() => {
-    setPostData(data);
-  }, []);
-
-  return <Presenter postData={postData} setPostData={setPostData} />;
+  return <Presenter postData={postData} />;
 };
 
 export default PostList;
