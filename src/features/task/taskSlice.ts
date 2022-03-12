@@ -19,7 +19,7 @@ const initialState: TaskState = {
   idCount: 1,
   tasks: [
     {
-      id: 0,
+      id: 1,
       username: 'username1',
       date: 'date1',
       content:
