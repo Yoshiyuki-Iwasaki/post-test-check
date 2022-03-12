@@ -1,5 +1,4 @@
 import React from 'react';
-// import { PostInputType } from './type';
 import { useForm } from 'react-hook-form';
 import Presenter from './presenter';
 import { useDispatch } from 'react-redux';
