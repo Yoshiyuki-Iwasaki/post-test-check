@@ -7,7 +7,6 @@ const Presenter = ({ register, handleCreate, handleSubmit }: any) => {
       <FormInput
         type="text"
         data-testid="input"
-        placeholder={'New Task'}
         {...register('taskTitle', { required: true })}
       />
     </Form>
