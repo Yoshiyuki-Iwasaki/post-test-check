@@ -12,10 +12,6 @@ const postData = {
   likeCount: 0,
 };
 
-const handleLike = () => {
-  console.log(handleLike);
-};
-
 export const BasicLike = () => (
   <Like postData={postData} handleLike={console.log('click')} />
 );
