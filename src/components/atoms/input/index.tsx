@@ -1,7 +1,17 @@
 import React from 'react';
 import Presenter from './presenter';
 
-const Input: React.FC<any> = ({ register, handleSubmit, handleCreate }) => {
+type InputType = {
+  register?: any;
+  handleSubmit?: any;
+  handleCreate?: any;
+};
+
+const Input: React.FC<InputType> = ({
+  register,
+  handleSubmit,
+  handleCreate,
+}) => {
   return (
     <Presenter
       register={register}

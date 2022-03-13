@@ -1,9 +1,24 @@
-import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 
 import Like from './';
 
-export const basicLike = () => <Like />;
+const postData = {
+  id: 1,
+  username: 'username1',
+  date: 'date1',
+  content:
+    '投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容',
+  likeState: false,
+  likeCount: 0,
+};
+
+const handleLike = () => {
+  console.log(handleLike);
+};
+
+export const BasicLike = () => (
+  <Like postData={postData} handleLike={console.log('click')} />
+);
 
 export default {
   component: Like,

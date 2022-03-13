@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
+import { useForm } from 'react-hook-form';
 import Input from './';
 
-export const basicInput = () => {
-  return <Input />;
+export const BasicInput = () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  return <Input register={register} handleSubmit={handleSubmit} />;
 };
 
 export default {
