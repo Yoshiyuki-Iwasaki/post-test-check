@@ -1,11 +1,6 @@
 import React from 'react';
 import Presenter from './presenter';
-
-type InputType = {
-  register?: any;
-  handleSubmit?: any;
-  handleCreate?: any;
-};
+import { InputType } from './type';
 
 const Input: React.FC<InputType> = ({
   register,

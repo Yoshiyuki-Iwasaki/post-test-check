@@ -1,7 +1,12 @@
 import React from 'react';
 import { Form, FormInput } from './styles';
+import { InputType } from './type';
 
-const Presenter = ({ register, handleCreate, handleSubmit }: any) => {
+const Presenter: React.FC<InputType> = ({
+  register,
+  handleCreate,
+  handleSubmit,
+}) => {
   return (
     <Form onSubmit={handleSubmit(handleCreate)}>
       <FormInput

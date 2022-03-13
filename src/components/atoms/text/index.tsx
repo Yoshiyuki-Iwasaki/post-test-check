@@ -1,7 +1,7 @@
 import React from 'react';
-import { Props } from './type';
+import { TextType } from './type';
 
-const Text: React.FC<Props> = ({ fontSize, color, children }) => {
+const Text: React.FC<TextType> = ({ fontSize, color, children }) => {
   return <p style={{ fontSize, color }}>{children}</p>;
 };
 
