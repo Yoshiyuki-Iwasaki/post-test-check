@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import UserDetail from '../../components/organisms/profile';
 import { Main } from './style';
 
-const User = () => {
+const User: React.FC = () => {
   return (
     <Main>
       <UserDetail />
