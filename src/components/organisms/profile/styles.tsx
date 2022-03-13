@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const Main = styled.p`
-  width: 250px;
-`;
-
 export const Icon = styled.p`
   margin: 0 auto;
   width: 70px;

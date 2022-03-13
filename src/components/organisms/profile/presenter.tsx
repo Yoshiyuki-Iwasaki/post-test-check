@@ -1,15 +1,15 @@
 import React from 'react';
 import Follow from '../../atoms/follow';
-import { Main, Icon, Username, Description } from './styles';
+import { Icon, Username, Description } from './styles';
 
-const Presenter = ({ userDate }: any) => {
+const Presenter: React.FC<any> = ({ userData }) => {
   return (
-    <Main>
+    <>
       <Icon></Icon>
-      <Username>{userDate && userDate.username}</Username>
+      <Username>{userData && userData.username}</Username>
       <Follow />
-      <Description>{userDate && userDate.description}</Description>
-    </Main>
+      <Description>{userData && userData.description}</Description>
+    </>
   );
 };
 
