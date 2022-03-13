@@ -1,12 +1,14 @@
 import React from 'react';
 import { Main, Icon, UserName, Description } from './styles';
 
-const Presenter = ({ username, description }: any) => {
+const Presenter = ({ postData }: any) => {
   return (
     <Main>
       <Icon></Icon>
-      {username && <UserName>{username}</UserName>}
-      {description && <Description>{description}</Description>}
+      {postData.username && <UserName>{postData.username}</UserName>}
+      {postData.description && (
+        <Description>{postData.description}</Description>
+      )}
     </Main>
   );
 };

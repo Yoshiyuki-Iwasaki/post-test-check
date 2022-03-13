@@ -5,7 +5,7 @@ import { Content } from './style';
 const Post = () => {
   return (
     <Content>
-      <PostItem />
+      <PostItem postData={''} handleLike={''} />
     </Content>
   );
 };
