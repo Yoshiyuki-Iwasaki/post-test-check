@@ -11,11 +11,4 @@ export const Inner = styled.div`
   /* display: flex; */
 `;
 
-export const Title = styled.h1`
-  padding: 20px 0;
-  text-align: center;
-  font-size: 22px;
-  color: #fff;
-`;
-
 export const Content = styled.div``;

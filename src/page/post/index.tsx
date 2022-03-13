@@ -1,11 +1,14 @@
 import React from 'react';
 import PostItem from '../../components/molecules/postItem';
+import { useSelector } from 'react-redux';
+import { selectsTasks } from '../../features/task/taskSlice';
 import { Content } from './style';
 
-const Post = () => {
+const Post: React.FC = () => {
+  const postData = useSelector(selectsTasks);
   return (
     <Content>
-      <PostItem postData={''} handleLike={''} />
+      <PostItem postData={postData[0]} handleLike={''} />
     </Content>
   );
 };
