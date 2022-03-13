@@ -1,5 +1,6 @@
 import React from 'react';
-import { Main, Inner, Title, Content } from './style';
+import Header from '../../organisms/header';
+import { Main, Inner, Content } from './style';
 import { LayoutType } from './type';
 
 const Presenter: React.FC<LayoutType> = ({ children }) => {
@@ -7,7 +8,7 @@ const Presenter: React.FC<LayoutType> = ({ children }) => {
     <div>
       <Main>
         <Inner>
-          <Title>Post-Test-Check</Title>
+          <Header />
           <Content>{children}</Content>
         </Inner>
       </Main>
