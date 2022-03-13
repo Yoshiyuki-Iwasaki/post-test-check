@@ -1,7 +1,7 @@
 import Presenter from './presenter';
 
-const Like = ({ postData }: any) => {
-  return <Presenter postData={postData} />;
+const Like = ({ postData, handleLike }: any) => {
+  return <Presenter postData={postData} handleLike={handleLike} />;
 };
 
 export default Like;

@@ -1,18 +1,27 @@
 import React from 'react';
 import PostItem from '../../molecules/postItem';
-import PostInput from '../../atoms/input';
+import Input from '../../atoms/input';
 import { postDataType } from '../../../type/data';
 import { Main } from './styles';
-// import { PostListType } from './type';
 
-const Presenter: React.FC<any> = ({ postData }) => {
+const Presenter: React.FC<any> = ({
+  register,
+  handleSubmit,
+  handleCreate,
+  handleLike,
+  postData,
+}) => {
   return (
     <>
-      <PostInput />
+      <Input
+        register={register}
+        handleSubmit={handleSubmit}
+        handleCreate={handleCreate}
+      />
       <Main>
         {postData &&
           postData.map((data: postDataType, index: number) => (
-            <PostItem key={index} postData={data} />
+            <PostItem key={index} postData={data} handleLike={handleLike} />
           ))}
       </Main>
     </>

@@ -1,14 +1,11 @@
 import { LikeButton } from './styles';
-import { useDispatch } from 'react-redux';
-import { likeTask } from '../../../features/task/taskSlice';
 
-const Presenter = ({ postData }: any) => {
-  const dispatch = useDispatch();
+const Presenter = ({ postData, handleLike }: any) => {
   return (
     <LikeButton
       likedFlag={postData.likeState}
       data-testid="like"
-      onClick={() => dispatch(likeTask(postData))}
+      onClick={() => handleLike(postData)}
     >
       {postData.likeCount}
     </LikeButton>

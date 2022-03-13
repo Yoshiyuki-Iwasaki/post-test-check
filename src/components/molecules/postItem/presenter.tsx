@@ -13,7 +13,7 @@ import {
 } from './styles';
 import React from 'react';
 
-const Presenter: React.FC<any> = ({ postData, handleRemove }) => {
+const Presenter: React.FC<any> = ({ postData, handleRemove, handleLike }) => {
   return (
     <Main>
       <RemoveButton onClick={() => handleRemove()}>削除</RemoveButton>
@@ -29,7 +29,7 @@ const Presenter: React.FC<any> = ({ postData, handleRemove }) => {
           <Content>{postData.content}</Content>
         </PostContent>
       </Inner>
-      <Like postData={postData} />
+      <Like postData={postData} handleLike={handleLike} />
     </Main>
   );
 };
