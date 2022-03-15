@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeTask } from '../../../features/task/taskSlice';
+import { removeTask } from '../../../slice/task';
 import Presenter from './presenter';
 import { PostItemType } from './type';
 

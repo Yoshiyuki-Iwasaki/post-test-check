@@ -1,4 +1,4 @@
-import reducer, { likeTask } from '../../../features/task/taskSlice';
+import reducer, { likeTask } from '../../../slice/task';
 
 test('should return the initial state', () => {
   expect(reducer(undefined, {})).toEqual({

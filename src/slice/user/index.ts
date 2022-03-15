@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 
-interface UserState {
+export interface UserState {
   idCount: number;
   users: [
     {
@@ -40,11 +40,5 @@ export const userSlice = createSlice({
 });
 
 export const { ediUser } = userSlice.actions;
-
-// The function below is called a selector and allows us to select a value from
-// the state. Selectors can also be defined inline where they're used instead of
-// in the slice file. For example: `useSelector((state) => state.counter.value)`
-export const selectsUsers = (state: RootState): UserState['users'] =>
-  state.user.users;
 
 export default userSlice.reducer;

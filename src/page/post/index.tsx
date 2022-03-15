@@ -1,7 +1,7 @@
 import React from 'react';
 import PostItem from '../../components/molecules/postItem';
 import { useSelector } from 'react-redux';
-import { selectsTasks } from '../../features/task/taskSlice';
+import { selectsTasks } from '../../slice/task/selector';
 import { Content } from './style';
 
 const Post: React.FC = () => {

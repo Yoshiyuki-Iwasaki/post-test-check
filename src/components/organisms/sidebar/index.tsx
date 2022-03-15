@@ -1,6 +1,6 @@
 import React from 'react';
 import Presenter from './presenter';
-import { selectsUsers } from '../../../features/user/userSlice';
+import { selectsUsers } from '../../../slice/user/selector';
 import { useSelector } from 'react-redux';
 
 const Sidebar = () => {

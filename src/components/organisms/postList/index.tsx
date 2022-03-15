@@ -1,11 +1,8 @@
 import React from 'react';
 import Presenter from './presenter';
 import { useSelector } from 'react-redux';
-import {
-  selectsTasks,
-  createTask,
-  likeTask,
-} from '../../../features/task/taskSlice';
+import { createTask, likeTask } from '../../../slice/task';
+import { selectsTasks } from '../../../slice/task/selector';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 
