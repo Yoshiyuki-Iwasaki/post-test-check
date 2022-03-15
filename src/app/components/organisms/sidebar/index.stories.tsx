@@ -1,6 +1,6 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs';
-import Sidebar from './';
+import Sidebar from '.';
 
 export const StandardSidebar = () => <Sidebar />;
 

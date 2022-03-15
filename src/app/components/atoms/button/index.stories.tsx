@@ -1,7 +1,7 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import Button from './';
+import Button from '.';
 
 export const basicButton = () => (
   <Button onClick={() => console.log('test')}>Button</Button>

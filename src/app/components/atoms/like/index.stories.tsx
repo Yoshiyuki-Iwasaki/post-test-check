@@ -1,6 +1,6 @@
 import { withKnobs } from '@storybook/addon-knobs';
 
-import Like from './';
+import Like from '.';
 
 const postData = {
   id: 1,

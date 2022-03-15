@@ -1,12 +1,12 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import Text from './';
+import PostList from '.';
 
-export const basicText = () => <Text>Text</Text>;
+export const basicPostList = () => <PostList />;
 
 export default {
-  component: Text,
+  component: PostList,
   decorators: [withKnobs],
-  title: 'atoms/Text',
+  title: 'organisms/PostList',
 };

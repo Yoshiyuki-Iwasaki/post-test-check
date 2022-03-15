@@ -1,6 +1,6 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
-import PostItem from './';
+import PostItem from '.';
 
 const postData = {
   idCount: 1,

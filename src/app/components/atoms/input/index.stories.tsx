@@ -1,6 +1,6 @@
 import { withKnobs } from '@storybook/addon-knobs';
 import { useForm } from 'react-hook-form';
-import Input from './';
+import Input from '.';
 
 export const BasicInput = () => {
   const { register, handleSubmit, reset } = useForm();

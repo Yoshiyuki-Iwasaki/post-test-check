@@ -1,12 +1,12 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import Follow from './';
+import Text from '.';
 
-export const basicFollow = () => <Follow />;
+export const basicText = () => <Text>Text</Text>;
 
 export default {
-  component: Follow,
+  component: Text,
   decorators: [withKnobs],
-  title: 'atoms/Follow',
+  title: 'atoms/Text',
 };
