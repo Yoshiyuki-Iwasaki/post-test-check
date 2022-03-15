@@ -3179,6 +3179,13 @@
   dependencies:
     "@types/react" "^16"
 
+"@types/react-helmet-async@^1.0.3":
+  "integrity" "sha512-DqbSuZPSHiH1l3XI/y8LbhrAGNh+Bpc9QY4MsYRM1yD4+qhax8bN4DInUMpv/tNyIdjsa+1V8XXmbRx8W5dB0w=="
+  "resolved" "https://registry.npmjs.org/@types/react-helmet-async/-/react-helmet-async-1.0.3.tgz"
+  "version" "1.0.3"
+  dependencies:
+    "react-helmet-async" "*"
+
 "@types/react-redux@^7.1.20":
   "integrity" "sha512-D02o3FPfqQlfu2WeEYwh3x2otYd2Dk1o8wAfsA0B1C2AJEFxE663Ozu7JzuWbznGgW248NaOF6wsqCGNq9d3qw=="
   "resolved" "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.23.tgz"
@@ -12057,10 +12064,10 @@
   "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
   "version" "3.2.0"
 
-"react-helmet-async@^1.0.7":
-  "integrity" "sha512-XgSQezeCbLfCxdZhDA3T/g27XZKnOYyOkruopTLSJj8RvFZwdXnM4djnfYaiBSDzOidDgTo1jcEozoRu/+P9UQ=="
-  "resolved" "https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-1.2.2.tgz"
-  "version" "1.2.2"
+"react-helmet-async@*", "react-helmet-async@^1.0.7", "react-helmet-async@^1.2.3":
+  "integrity" "sha512-mCk2silF53Tq/YaYdkl2sB+/tDoPnaxN7dFS/6ZLJb/rhUY2EWGI5Xj2b4jHppScMqY45MbgPSwTxDchKpZ5Kw=="
+  "resolved" "https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-1.2.3.tgz"
+  "version" "1.2.3"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "invariant" "^2.2.4"
