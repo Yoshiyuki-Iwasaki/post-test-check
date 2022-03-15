@@ -1,13 +1,8 @@
 import { VFC } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { HeadType } from '../head/type';
 
-type Props = {
-  title?: string;
-  description?: string;
-  path?: string;
-};
-
-export const HeadBlock: VFC<Props> = (props) => {
+export const HeadBlock: VFC<HeadType> = (props) => {
   const { title, description, path } = props;
   return (
     <Helmet>
@@ -16,7 +11,7 @@ export const HeadBlock: VFC<Props> = (props) => {
         name="description"
         content={description ?? 'デフォルトの説明文です'}
       />
-      <link rel="canonical" href={`https:hoge.com/${path ?? ''}`} />
+      <link rel="canonical" href={`post-test-check.vercel.app/${path ?? ''}`} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>
   );

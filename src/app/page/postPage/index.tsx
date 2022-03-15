@@ -9,7 +9,11 @@ const Post: React.FC = () => {
   const postData = useSelector(selectsTasks);
   return (
     <>
-      <HeadBlock />
+      <HeadBlock
+        title="投稿ページのタイトルです"
+        description="投稿ページの説明文です"
+        path="post"
+      />
       <Content>
         <PostItem postData={postData[0]} handleLike={''} />
       </Content>

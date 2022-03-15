@@ -6,7 +6,11 @@ import { Main } from './style';
 const User: React.FC = () => {
   return (
     <>
-      <HeadBlock />
+      <HeadBlock
+        title="ユーザーページのタイトルです"
+        description="ユーザーページの説明文です"
+        path="user"
+      />
       <Main>
         <UserDetail />
       </Main>
