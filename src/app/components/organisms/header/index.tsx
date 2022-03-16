@@ -1,11 +1,13 @@
 import React from 'react';
-import { HeaderLayout, Title, Link } from './style';
+import { HeaderLayout, Title, TitleLink, LinkLayout } from './style';
 
 const Header: React.FC = () => {
   return (
     <HeaderLayout>
-      <Title>Post-Test-Check</Title>
-      <Link href="#">設定</Link>
+      <Title>
+        <TitleLink to="/">Post-Test-Check</TitleLink>
+      </Title>
+      <LinkLayout to="/setting">設定</LinkLayout>
     </HeaderLayout>
   );
 };

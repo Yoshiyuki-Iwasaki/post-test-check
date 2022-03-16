@@ -17,7 +17,7 @@ const Presenter: React.FC<any> = ({ postData, handleRemove, handleLike }) => {
   return (
     <Main>
       <RemoveButton onClick={() => handleRemove()}>削除</RemoveButton>
-      <Inner>
+      <Inner to={'/post'}>
         <AvatarInfo>
           <Avatar></Avatar>
         </AvatarInfo>

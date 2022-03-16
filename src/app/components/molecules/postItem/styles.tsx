@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Main = styled.li`
   background: #fff;
@@ -7,7 +7,7 @@ export const Main = styled.li`
   position: relative;
   width: 400px;
 `;
-export const Inner = styled.div`
+export const Inner = styled(Link)`
   padding: 15px 50px 50px 15px;
   display: flex;
 `;
