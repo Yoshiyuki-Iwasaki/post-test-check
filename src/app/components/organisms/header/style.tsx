@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const HeaderLayout = styled.header`
   position: relative;
@@ -7,11 +8,14 @@ export const HeaderLayout = styled.header`
 export const Title = styled.h1`
   padding: 20px 0;
   text-align: center;
+`;
+
+export const TitleLink = styled(Link)`
   font-size: 22px;
   color: #fff;
 `;
 
-export const Link = styled.a`
+export const LinkLayout = styled(Link)`
   position: absolute;
   top: 50%;
   right: 0;
