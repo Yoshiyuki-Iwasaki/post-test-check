@@ -10,10 +10,7 @@ export const Icon = styled.p`
 export const Username = styled.p`
   margin-top: 10px;
   text-align: center;
-  font-size: 15px;
-  font-weight: 700;
 `;
 export const Description = styled.p`
   margin-top: 10px;
-  font-size: 14px;
 `;

@@ -10,9 +10,14 @@ import {
   UserInfo,
   Content,
 } from './styles';
+import { PostItemPresenterType } from './type';
 import React from 'react';
 
-const Presenter: React.FC<any> = ({ postData, handleRemove, handleLike }) => {
+const Presenter: React.FC<PostItemPresenterType> = ({
+  postData,
+  handleRemove,
+  handleLike,
+}) => {
   return (
     <Main>
       <RemoveButton onClick={() => handleRemove()}>削除</RemoveButton>
