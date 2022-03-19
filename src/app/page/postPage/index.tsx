@@ -19,7 +19,11 @@ const Post: React.FC = () => {
         path="post"
       />
       <ul>
-        <PostItem postData={postData[0]} handleLike={handleLike} />
+        <PostItem
+          removeFlag={false}
+          postData={postData[0]}
+          handleLike={handleLike}
+        />
       </ul>
     </>
   );

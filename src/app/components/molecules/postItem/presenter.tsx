@@ -15,15 +15,18 @@ import { PostItemPresenterType } from './type';
 import React from 'react';
 
 const Presenter: React.FC<PostItemPresenterType> = ({
+  removeFlag,
   postData,
   handleRemove,
   handleLike,
 }) => {
   return (
     <Main>
-      <RemoveButton onClick={() => handleRemove()}>
-        <Label fw={'700'}>×</Label>
-      </RemoveButton>
+      {removeFlag && (
+        <RemoveButton onClick={() => handleRemove()}>
+          <Label fw={'700'}>×</Label>
+        </RemoveButton>
+      )}
       <Inner to={'/post'}>
         <AvatarInfo>
           <Avatar></Avatar>

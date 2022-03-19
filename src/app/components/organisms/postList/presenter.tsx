@@ -21,7 +21,12 @@ const Presenter: React.FC<any> = ({
       <Main>
         {postData &&
           postData.map((data: postDataType, index: number) => (
-            <PostItem key={index} postData={data} handleLike={handleLike} />
+            <PostItem
+              key={index}
+              postData={data}
+              handleLike={handleLike}
+              removeFlag={true}
+            />
           ))}
       </Main>
     </>
