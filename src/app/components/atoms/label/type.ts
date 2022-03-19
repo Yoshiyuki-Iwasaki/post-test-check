@@ -1,4 +1,7 @@
 export type LabelType = {
-  fontSize?: number;
-  color?: string;
+  fs?: string;
+  cl?: string;
+  fw?: number;
+  lh?: number;
+  children?: any;
 };

@@ -1,4 +1,5 @@
 import Like from '../../atoms/like';
+import Label from '../../atoms/label';
 import {
   Main,
   RemoveButton,
@@ -7,8 +8,6 @@ import {
   Avatar,
   PostContent,
   UserInfo,
-  UserName,
-  Date,
   Content,
 } from './styles';
 import React from 'react';
@@ -23,10 +22,16 @@ const Presenter: React.FC<any> = ({ postData, handleRemove, handleLike }) => {
         </AvatarInfo>
         <PostContent>
           <UserInfo>
-            <UserName>{postData.username}</UserName>
-            <Date>{postData.date}</Date>
+            <Label fs={'15px'} fw={700}>
+              {postData.username}
+            </Label>
+            <Label fs={'13px'} cl={'gray'}>
+              {postData.date}
+            </Label>
           </UserInfo>
-          <Content>{postData.content}</Content>
+          <Content>
+            <Label>{postData.content}</Label>
+          </Content>
         </PostContent>
       </Inner>
       <Like postData={postData} handleLike={handleLike} />

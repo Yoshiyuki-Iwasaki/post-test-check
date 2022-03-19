@@ -28,15 +28,6 @@ export const UserInfo = styled.div`
   display: flex;
   align-items: center;
 `;
-export const UserName = styled.div`
-  font-size: 15px;
-  font-weight: 700;
-`;
-export const Date = styled.p`
-  margin-left: 5px;
-  font-size: 13px;
-  color: gray;
-`;
 export const Content = styled.p`
   margin-top: 10px;
   font-size: 14px;
