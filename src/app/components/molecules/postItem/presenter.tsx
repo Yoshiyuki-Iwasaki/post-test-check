@@ -8,6 +8,7 @@ import {
   Avatar,
   PostContent,
   UserInfo,
+  Username,
   Content,
 } from './styles';
 import { PostItemPresenterType } from './type';
@@ -20,16 +21,20 @@ const Presenter: React.FC<PostItemPresenterType> = ({
 }) => {
   return (
     <Main>
-      <RemoveButton onClick={() => handleRemove()}>削除</RemoveButton>
+      <RemoveButton onClick={() => handleRemove()}>
+        <Label fw={'700'}>×</Label>
+      </RemoveButton>
       <Inner to={'/post'}>
         <AvatarInfo>
           <Avatar></Avatar>
         </AvatarInfo>
         <PostContent>
           <UserInfo>
-            <Label fs={'15px'} fw={700}>
-              {postData.username}
-            </Label>
+            <Username>
+              <Label fs={'15px'} fw={'700'}>
+                {postData.username}
+              </Label>
+            </Username>
             <Label fs={'13px'} cl={'gray'}>
               {postData.date}
             </Label>

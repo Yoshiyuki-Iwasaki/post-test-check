@@ -8,7 +8,7 @@ const Presenter = ({ postData }: any) => {
       <Icon></Icon>
       {postData.username && (
         <UserName>
-          <Label>{postData.username}</Label>
+          <Label fw={'700'}>{postData.username}</Label>
         </UserName>
       )}
       {postData.description && (

@@ -1,7 +1,7 @@
 export type LabelType = {
   fs?: string;
   cl?: string;
-  fw?: number;
-  lh?: number;
+  fw?: string;
+  lh?: string;
   children?: any;
 };

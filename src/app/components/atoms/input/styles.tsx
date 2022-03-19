@@ -10,4 +10,5 @@ export const FormInput = styled.input`
   width: 100%;
   height: 50px;
   font-size: 14px;
+  color: #333;
 `;
