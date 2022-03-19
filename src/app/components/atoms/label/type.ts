@@ -3,5 +3,6 @@ export type LabelType = {
   cl?: string;
   fw?: string;
   lh?: string;
+  href?: string;
   children?: any;
 };

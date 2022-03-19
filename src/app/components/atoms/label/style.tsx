@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Label = styled.p.attrs((props: any) => ({
   fs: props.fs || '14px',
@@ -12,3 +13,5 @@ export const Label = styled.p.attrs((props: any) => ({
   font-weight: ${(props: any) => props.fw};
   line-height: ${(props: any) => props.lh};
 `;
+
+export const LabelLink = Label.withComponent(Link);
