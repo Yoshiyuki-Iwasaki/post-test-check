@@ -1,7 +1,6 @@
 import React from 'react';
-import UserDetail from '../../components/organisms/profile';
+import Profile from '../../components/organisms/profile';
 import { HeadBlock } from '../../components/organisms/head';
-import { Main } from './style';
 
 const User: React.FC = () => {
   return (
@@ -11,9 +10,7 @@ const User: React.FC = () => {
         description="ユーザーページの説明文です"
         path="user"
       />
-      <Main>
-        <UserDetail />
-      </Main>
+      <Profile />
     </>
   );
 };

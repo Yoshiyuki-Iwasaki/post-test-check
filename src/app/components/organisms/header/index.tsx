@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <HeaderLayout>
       <Title>
-        <TitleLink to="/">Post-Test-Check</TitleLink>
+        <TitleLink to="/">Talkee</TitleLink>
       </Title>
       <LinkLayout to="/setting">設定</LinkLayout>
     </HeaderLayout>
