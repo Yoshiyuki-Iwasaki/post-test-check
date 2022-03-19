@@ -1,7 +1,7 @@
 import React from 'react';
 import PostItem from '../../molecules/postItem';
 import Input from '../../atoms/input';
-import { postDataType } from '../../../../type/data';
+import { postDataType } from './type';
 import { Main } from './styles';
 
 const Presenter: React.FC<any> = ({
