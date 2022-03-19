@@ -1,4 +1,4 @@
-export type TextType = {
+export type LabelType = {
   fontSize?: number;
   color?: string;
 };
