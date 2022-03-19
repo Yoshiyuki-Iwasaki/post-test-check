@@ -14,4 +14,10 @@ export const Label = styled.p.attrs((props: any) => ({
   line-height: ${(props: any) => props.lh};
 `;
 
-export const LabelLink = Label.withComponent(Link);
+export const LabelLink = styled(Label.withComponent(Link))`
+  transition: all 0.6s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+`;
