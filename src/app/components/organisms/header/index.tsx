@@ -1,13 +1,20 @@
 import React from 'react';
-import { HeaderLayout, Title, TitleLink, LinkLayout } from './style';
+import Label from '../../atoms/label';
+import { HeaderLayout, Title, LinkLayout } from './style';
 
 const Header: React.FC = () => {
   return (
     <HeaderLayout>
       <Title>
-        <TitleLink to="/">Post-Test-Check</TitleLink>
+        <Label href="/" fs={'22px'} cl={'#fff'}>
+          Talkee
+        </Label>
       </Title>
-      <LinkLayout to="/setting">設定</LinkLayout>
+      <LinkLayout>
+        <Label href="/setting" cl={'#fff'}>
+          設定
+        </Label>
+      </LinkLayout>
     </HeaderLayout>
   );
 };

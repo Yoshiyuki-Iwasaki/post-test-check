@@ -1,13 +1,20 @@
 import React from 'react';
+import Label from '../../atoms/label';
 import { Main, Icon, UserName, Description } from './styles';
 
 const Presenter = ({ postData }: any) => {
   return (
     <Main>
       <Icon></Icon>
-      {postData.username && <UserName>{postData.username}</UserName>}
+      {postData.username && (
+        <UserName>
+          <Label fw={'700'}>{postData.username}</Label>
+        </UserName>
+      )}
       {postData.description && (
-        <Description>{postData.description}</Description>
+        <Description>
+          <Label>{postData.description}</Label>
+        </Description>
       )}
     </Main>
   );

@@ -1,4 +1,5 @@
 import Like from '../../atoms/like';
+import Label from '../../atoms/label';
 import {
   Main,
   RemoveButton,
@@ -7,26 +8,40 @@ import {
   Avatar,
   PostContent,
   UserInfo,
-  UserName,
-  Date,
+  Username,
   Content,
 } from './styles';
+import { PostItemPresenterType } from './type';
 import React from 'react';
 
-const Presenter: React.FC<any> = ({ postData, handleRemove, handleLike }) => {
+const Presenter: React.FC<PostItemPresenterType> = ({
+  postData,
+  handleRemove,
+  handleLike,
+}) => {
   return (
     <Main>
-      <RemoveButton onClick={() => handleRemove()}>削除</RemoveButton>
+      <RemoveButton onClick={() => handleRemove()}>
+        <Label fw={'700'}>×</Label>
+      </RemoveButton>
       <Inner to={'/post'}>
         <AvatarInfo>
           <Avatar></Avatar>
         </AvatarInfo>
         <PostContent>
           <UserInfo>
-            <UserName>{postData.username}</UserName>
-            <Date>{postData.date}</Date>
+            <Username>
+              <Label fs={'15px'} fw={'700'}>
+                {postData.username}
+              </Label>
+            </Username>
+            <Label fs={'13px'} cl={'gray'}>
+              {postData.date}
+            </Label>
           </UserInfo>
-          <Content>{postData.content}</Content>
+          <Content>
+            <Label>{postData.content}</Label>
+          </Content>
         </PostContent>
       </Inner>
       <Like postData={postData} handleLike={handleLike} />

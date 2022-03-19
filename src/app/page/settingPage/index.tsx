@@ -1,13 +1,11 @@
-import PostList from '../../components/organisms/postList';
-import Sidebar from '../../components/organisms/sidebar';
 import { HeadBlock } from '../../components/organisms/head';
+import SettingList from '../../components/organisms/settingList';
 
 const Top = () => {
   return (
     <>
       <HeadBlock />
-      <Sidebar />
-      <PostList />
+      <SettingList />
     </>
   );
 };
