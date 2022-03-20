@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { ButtonType } from './type';
 import { ButtonLayout } from './style';
 
-const Button: React.FC<ButtonType> = ({ children, ...buttonProps }) => {
+const Button: FC<ButtonType> = ({ children, ...buttonProps }) => {
   return <ButtonLayout {...buttonProps}>{children}</ButtonLayout>;
 };
 

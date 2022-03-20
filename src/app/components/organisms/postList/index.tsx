@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Presenter from './presenter';
 import { useSelector } from 'react-redux';
 import { createTask, likeTask } from '../../../slice/task';
@@ -6,7 +6,7 @@ import { selectsTasks } from '../../../slice/task/selector';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 
-const PostList: React.FC = () => {
+const PostList: FC = () => {
   const dispatch = useDispatch();
   const { register, handleSubmit, reset } = useForm();
   const postData = useSelector(selectsTasks);

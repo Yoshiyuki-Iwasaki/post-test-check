@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Label from '../../atoms/label';
 import { HeaderLayout, Title, LinkLayout } from './style';
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   return (
     <HeaderLayout>
       <Title>

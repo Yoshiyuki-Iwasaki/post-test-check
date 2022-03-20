@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { HelmetProvider } from 'react-helmet-async';

@@ -12,9 +12,9 @@ import {
   Content,
 } from './styles';
 import { PostItemPresenterType } from './type';
-import React from 'react';
+import React, { FC } from 'react';
 
-const Presenter: React.FC<PostItemPresenterType> = ({
+const Presenter: FC<PostItemPresenterType> = ({
   removeFlag,
   postData,
   handleRemove,

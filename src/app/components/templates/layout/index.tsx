@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Presenter from './presenter';
 import { LayoutType } from './type';
 
-const Layout: React.FC<LayoutType> = ({ children }) => {
+const Layout: FC<LayoutType> = ({ children }) => {
   return <Presenter children={children} />;
 };
 

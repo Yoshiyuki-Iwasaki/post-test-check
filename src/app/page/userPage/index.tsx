@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Profile from '../../components/organisms/profile';
 import { HeadBlock } from '../../components/organisms/head';
 
-const User: React.FC = () => {
+const User: FC = () => {
   return (
     <>
       <HeadBlock

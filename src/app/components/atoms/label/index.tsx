@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Presenter from './presenter';
 import { LabelType } from './type';
 
-const Label: React.FC<LabelType> = ({ fs, cl, fw, lh, href, children }) => {
+const Label: FC<LabelType> = ({ fs, cl, fw, lh, href, children }) => {
   return (
     <Presenter
       fs={fs}

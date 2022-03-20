@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Presenter from './presenter';
 import { selectsUsers } from '../../../slice/user/selector';
 import { useSelector } from 'react-redux';

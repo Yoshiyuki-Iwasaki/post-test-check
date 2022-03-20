@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import PostItem from '../../components/molecules/postItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectsTasks } from '../../slice/task/selector';
 import { likeTask } from '../../slice/task';
 import { HeadBlock } from '../../components/organisms/head';
 
-const Post: React.FC = () => {
+const Post: FC = () => {
   const postData = useSelector(selectsTasks);
   const dispatch = useDispatch();
   const handleLike = (data: any) => {

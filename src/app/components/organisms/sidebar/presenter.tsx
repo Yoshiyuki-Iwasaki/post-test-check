@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Label from '../../atoms/label';
 import { Main, Icon, UserName, Description } from './styles';
 

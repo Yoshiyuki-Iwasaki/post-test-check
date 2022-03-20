@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 import PostItem from '../../molecules/postItem';
 import Input from '../../atoms/input';
 import { postDataType } from './type';
 import { Main } from './styles';
 
-const Presenter: React.FC<any> = ({
+const Presenter: FC<any> = ({
   register,
   handleSubmit,
   handleCreate,

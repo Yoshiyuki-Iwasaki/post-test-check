@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { withDesign } from 'storybook-addon-designs';
 import Sidebar from '.';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 
 import Button from '.';

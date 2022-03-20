@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Header from '../../organisms/header';
 
 import { Main, Inner, Content } from './style';
 import { LayoutType } from './type';
 
-const Presenter: React.FC<LayoutType> = ({ children }) => {
+const Presenter: FC<LayoutType> = ({ children }) => {
   return (
     <>
       <Main>
