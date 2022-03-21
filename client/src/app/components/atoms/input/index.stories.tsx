@@ -5,7 +5,9 @@ import Input from '.';
 export const BasicInput = () => {
   const { register, handleSubmit, reset } = useForm();
 
-  return <Input register={register} handleSubmit={handleSubmit} />;
+  return (
+    <Input value={'content'} register={register} handleSubmit={handleSubmit} />
+  );
 };
 
 export default {

@@ -26,10 +26,10 @@ export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    // いいね機能
-    ediUser: (state, action) => {
+    // ユーザー情報機能
+    editUser: (state, action) => {
       // state.tasksの中から編集したいtaskを抜き出す
-      const user = state.users.find((t) => t.id === action.payload.id);
+      const user = state.users[0];
       if (user) {
         // 抜き出したtaskのtitleをかきかえる
         user.username = action.payload.username;
@@ -38,6 +38,6 @@ export const userSlice = createSlice({
   },
 });
 
-export const { ediUser } = userSlice.actions;
+export const { editUser } = userSlice.actions;
 
 export default userSlice.reducer;

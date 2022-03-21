@@ -12,7 +12,7 @@ const PostList: FC = () => {
   const postData = useSelector(selectsTasks);
 
   const handleCreate = (data: any) => {
-    dispatch(createTask(data.taskTitle));
+    dispatch(createTask(data.content));
     reset();
   };
 

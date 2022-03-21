@@ -14,6 +14,7 @@ const Presenter: FC<any> = ({
   return (
     <>
       <Input
+        value={'content'}
         register={register}
         handleSubmit={handleSubmit}
         handleCreate={handleCreate}
