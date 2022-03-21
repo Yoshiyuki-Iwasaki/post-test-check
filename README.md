@@ -1,4 +1,4 @@
-# ptc
+# talkee
 
 ## 使用技術
 - TypeScript
