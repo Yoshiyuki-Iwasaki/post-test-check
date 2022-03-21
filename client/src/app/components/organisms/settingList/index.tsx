@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import SettingListItem from '../../molecules/settingListItem';
 import { List } from './style';
 
-const SettingList = () => {
+const SettingList:FC = () => {
   return (
     <List>
       <SettingListItem href="/change_username">プロフィール変更</SettingListItem>

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-const ChangeUsername = () => {
+const ChangeUsername:FC = () => {
   return (
     <>
     </>

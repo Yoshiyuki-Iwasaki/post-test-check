@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Label from '../../atoms/label';
 import { Main, Icon, UserName, Description } from './styles';
 
-const Presenter = ({ postData }: any) => {
+const Presenter:FC<any> = ({ postData }) => {
   return (
     <Main>
       <Icon></Icon>
