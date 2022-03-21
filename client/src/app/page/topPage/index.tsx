@@ -3,7 +3,7 @@ import PostList from '../../components/organisms/postList';
 import Sidebar from '../../components/organisms/sidebar';
 import { HeadBlock } from '../../components/organisms/head';
 
-const Top: FC = () => {
+const TopPage: FC = () => {
   return (
     <>
       <HeadBlock />
@@ -13,4 +13,4 @@ const Top: FC = () => {
   );
 };
 
-export default Top;
+export default TopPage;

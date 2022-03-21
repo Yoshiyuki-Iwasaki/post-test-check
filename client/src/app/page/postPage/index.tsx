@@ -5,7 +5,7 @@ import { selectsTasks } from '../../slice/task/selector';
 import { likeTask } from '../../slice/task';
 import { HeadBlock } from '../../components/organisms/head';
 
-const Post: FC = () => {
+const PostPage: FC = () => {
   const postData = useSelector(selectsTasks);
   const dispatch = useDispatch();
   const handleLike = (data: any) => {
@@ -29,4 +29,4 @@ const Post: FC = () => {
   );
 };
 
-export default Post;
+export default PostPage;

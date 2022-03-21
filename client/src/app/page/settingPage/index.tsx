@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { HeadBlock } from '../../components/organisms/head';
 import SettingList from '../../components/organisms/settingList';
 
-const Top: FC = () => {
+const SettingPage: FC = () => {
   return (
     <>
       <HeadBlock />
@@ -11,4 +11,4 @@ const Top: FC = () => {
   );
 };
 
-export default Top;
+export default SettingPage;

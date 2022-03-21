@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Profile from '../../components/organisms/profile';
 import { HeadBlock } from '../../components/organisms/head';
 
-const User: FC = () => {
+const UserPage: FC = () => {
   return (
     <>
       <HeadBlock
@@ -15,4 +15,4 @@ const User: FC = () => {
   );
 };
 
-export default User;
+export default UserPage;

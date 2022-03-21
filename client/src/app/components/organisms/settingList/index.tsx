@@ -5,7 +5,7 @@ import { List } from './style';
 const SettingList = () => {
   return (
     <List>
-      <SettingListItem href="/">プロフィール変更</SettingListItem>
+      <SettingListItem href="/change_username">プロフィール変更</SettingListItem>
       <SettingListItem href="/">ログアウト</SettingListItem>
     </List>
   );
