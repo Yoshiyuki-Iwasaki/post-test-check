@@ -2,7 +2,7 @@ import Top from './app/page/topPage';
 import Post from './app/page/postPage';
 import User from './app/page/userPage';
 import Setting from './app/page/settingPage';
-import ChangeUsername from './app/page/changeUsernamePage';
+import ChangeUsername from './app/page/changeUserinfoPage';
 import Layout from './app/components/templates/layout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
