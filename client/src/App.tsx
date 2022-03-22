@@ -16,7 +16,7 @@ function App() {
             <Route path={'/user'} element={<User />} />
             <Route path={'/post'} element={<Post />} />
             <Route path={'/setting'} element={<Setting />} />
-            <Route path={'/change_username'} element={<ChangeUsername />} />
+            <Route path={'/change_userInfo'} element={<ChangeUsername />} />
           </Routes>
         </Layout>
       </Router>
