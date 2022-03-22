@@ -1,54 +1,51 @@
 import React, { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { editUsername, editDescription } from '../../../slice/user';
+import { editUsernfo } from '../../../slice/user';
 import { selectsUsers } from '../../../slice/user/selector';
 import { useForm } from 'react-hook-form';
-import Input from '../../atoms/input';
-import { Title, InputArea } from './style';
+import { Form, Title, FormInput, SubmitButton } from './style';
+import { useNavigate } from 'react-router-dom';
 
 const ChangeUserinfo: FC = () => {
   const dispatch = useDispatch();
   const selectedUser = useSelector(selectsUsers);
   const { register, handleSubmit, reset } = useForm();
+  const navigate = useNavigate();
 
-  const handleEditUsername = (data: any) => {
+  const handleEditUserinfo = (data: any) => {
     const sendData = {
       ...selectedUser,
       username: data.username,
-    };
-    dispatch(editUsername(sendData));
-    reset();
-  };
-
-  const handleEditDescription = (data: any) => {
-    const sendData = {
-      ...selectedUser,
       description: data.description,
     };
-    dispatch(editDescription(sendData));
+    dispatch(editUsernfo(sendData));
     reset();
+    navigate('/');
   };
 
   return (
     <>
-      <InputArea>
+      <Form onSubmit={handleSubmit(handleEditUserinfo)}>
         <Title>ユーザー名</Title>
-        <Input
-          value={'username'}
-          register={register}
-          handleSubmit={handleSubmit}
-          handleCreate={handleEditUsername}
+        <FormInput
+          type="text"
+          data-testid="input"
+          defaultValue={selectedUser[0].username}
+          {...register('username', { required: true })}
         />
-      </InputArea>
-      <InputArea>
         <Title>ディスクリプション</Title>
-        <Input
-          value={'description'}
-          register={register}
-          handleSubmit={handleSubmit}
-          handleCreate={handleEditDescription}
+        <FormInput
+          type="text"
+          data-testid="input"
+          defaultValue={selectedUser[0].description}
+          {...register('description', { required: true })}
         />
-      </InputArea>
+        <SubmitButton
+          type="submit"
+          value="編集"
+          onClick={handleSubmit(handleEditUserinfo)}
+        />
+      </Form>
     </>
   );
 };
