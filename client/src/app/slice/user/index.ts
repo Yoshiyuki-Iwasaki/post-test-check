@@ -27,17 +27,18 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     // ユーザー情報機能
-    editUser: (state, action) => {
+    editUsernfo: (state, action) => {
       // state.tasksの中から編集したいtaskを抜き出す
       const user = state.users[0];
       if (user) {
         // 抜き出したtaskのtitleをかきかえる
         user.username = action.payload.username;
+        user.description = action.payload.description;
       }
     },
   },
 });
 
-export const { editUser } = userSlice.actions;
+export const { editUsernfo } = userSlice.actions;
 
 export default userSlice.reducer;
