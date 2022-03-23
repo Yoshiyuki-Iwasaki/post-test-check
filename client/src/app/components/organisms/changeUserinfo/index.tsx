@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { editUsernfo } from '../../../slice/user';
 import { selectsUsers } from '../../../slice/user/selector';
 import { useForm } from 'react-hook-form';
-import { Form, Title, FormInput, SubmitButton } from './style';
 import { useNavigate } from 'react-router-dom';
+import Presenter from './presenter';
 
 const ChangeUserinfo: FC = () => {
   const dispatch = useDispatch();
@@ -24,29 +24,12 @@ const ChangeUserinfo: FC = () => {
   };
 
   return (
-    <>
-      <Form onSubmit={handleSubmit(handleEditUserinfo)}>
-        <Title>ユーザー名</Title>
-        <FormInput
-          type="text"
-          data-testid="input"
-          defaultValue={selectedUser[0].username}
-          {...register('username', { required: true })}
-        />
-        <Title>ディスクリプション</Title>
-        <FormInput
-          type="text"
-          data-testid="input"
-          defaultValue={selectedUser[0].description}
-          {...register('description', { required: true })}
-        />
-        <SubmitButton
-          type="submit"
-          value="編集"
-          onClick={handleSubmit(handleEditUserinfo)}
-        />
-      </Form>
-    </>
+    <Presenter
+      handleEditUserinfo={handleEditUserinfo}
+      register={register}
+      handleSubmit={handleSubmit}
+      selectedUser={selectedUser}
+    />
   );
 };
 

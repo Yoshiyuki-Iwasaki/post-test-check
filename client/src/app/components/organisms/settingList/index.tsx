@@ -1,16 +1,8 @@
 import React, { FC } from 'react';
-import SettingListItem from '../../molecules/settingListItem';
-import { List } from './style';
+import Presenter from './presenter';
 
 const SettingList: FC = () => {
-  return (
-    <List>
-      <SettingListItem href="/change_userInfo">
-        プロフィール変更
-      </SettingListItem>
-      <SettingListItem href="/">ログアウト</SettingListItem>
-    </List>
-  );
+  return <Presenter />;
 };
 
 export default SettingList;

@@ -1,22 +1,8 @@
 import React, { FC } from 'react';
-import Label from '../../atoms/label';
-import { HeaderLayout, Title, LinkLayout } from './style';
+import Presenter from './presenter';
 
 const Header: FC = () => {
-  return (
-    <HeaderLayout>
-      <Title>
-        <Label href="/" fs={'22px'} cl={'#fff'}>
-          Talkee
-        </Label>
-      </Title>
-      <LinkLayout>
-        <Label href="/setting" cl={'#fff'}>
-          設定
-        </Label>
-      </LinkLayout>
-    </HeaderLayout>
-  );
+  return <Presenter />;
 };
 
 export default Header;
