@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Main = styled.div`
+  padding: 15px;
+  background: #fff;
+`;
 export const Icon = styled.p`
   margin: 0 auto;
   width: 70px;

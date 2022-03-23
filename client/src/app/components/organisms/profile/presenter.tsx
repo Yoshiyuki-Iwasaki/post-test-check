@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Follow from '../../atoms/follow';
 import Label from '../../atoms/label';
-import { Icon, Username, Description } from './styles';
+import { Main, Icon, Username, Description } from './style';
 
 const Presenter: FC<any> = ({ userData }) => {
   return (

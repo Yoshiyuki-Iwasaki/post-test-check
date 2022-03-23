@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const Main = styled.div`
+export const Main = styled(Link)`
   padding: 10px;
   width: 250px;
   background: #fff;

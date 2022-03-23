@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Form, FormInput } from './styles';
+import { Form, FormInput } from './style';
 import { InputType } from './type';
 
 const Presenter: FC<InputType> = ({

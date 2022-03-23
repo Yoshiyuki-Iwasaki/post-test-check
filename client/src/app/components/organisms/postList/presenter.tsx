@@ -2,7 +2,7 @@ import { FC } from 'react';
 import PostItem from '../../molecules/postItem';
 import Input from '../../atoms/input';
 import { postDataType } from './type';
-import { Main } from './styles';
+import { Main } from './style';
 
 const Presenter: FC<any> = ({
   register,

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { LikeButton } from './styles';
+import { LikeButton } from './style';
 import { LikeType } from './type';
 
 const Presenter: FC<LikeType> = ({ postData, handleLike }) => {

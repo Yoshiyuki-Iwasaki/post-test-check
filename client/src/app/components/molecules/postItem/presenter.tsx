@@ -1,3 +1,4 @@
+import React, { FC } from 'react';
 import Like from '../../atoms/like';
 import Label from '../../atoms/label';
 import {
@@ -10,9 +11,8 @@ import {
   UserInfo,
   Username,
   Content,
-} from './styles';
+} from './style';
 import { PostItemPresenterType } from './type';
-import React, { FC } from 'react';
 
 const Presenter: FC<PostItemPresenterType> = ({
   removeFlag,

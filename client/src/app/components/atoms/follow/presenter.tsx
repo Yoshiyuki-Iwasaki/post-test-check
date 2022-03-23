@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { FollowButton } from './styles';
+import { FollowButton } from './style';
 import { PresenterType } from './type';
 
 const Presenter: FC<PresenterType> = ({ state, method }) => {

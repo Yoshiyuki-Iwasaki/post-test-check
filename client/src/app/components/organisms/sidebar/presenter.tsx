@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Label from '../../atoms/label';
-import { Main, Icon, UserName, Description } from './styles';
+import { Main, Icon, UserName, Description } from './style';
 
 const Presenter:FC<any> = ({ postData }) => {
   return (
