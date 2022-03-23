@@ -5,7 +5,7 @@ import { Main, Icon, Username, Description } from './style';
 
 const Presenter: FC<any> = ({ userData }) => {
   return (
-    <>
+    <Main>
       <Icon></Icon>
       <Username>
         <Label>{userData && userData.username}</Label>
@@ -14,7 +14,7 @@ const Presenter: FC<any> = ({ userData }) => {
       <Description>
         <Label>{userData && userData.description}</Label>
       </Description>
-    </>
+    </Main>
   );
 };
 
