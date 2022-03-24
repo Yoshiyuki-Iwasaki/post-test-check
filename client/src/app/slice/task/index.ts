@@ -67,6 +67,6 @@ export const taskSlice = createSlice({
   },
 });
 
-export const { createTask, removeTask, likeTask } = taskSlice.actions;
+export const { actions: appActions } = taskSlice;
 
 export default taskSlice.reducer;

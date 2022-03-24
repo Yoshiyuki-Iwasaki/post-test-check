@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Presenter from './presenter';
 import { useSelector } from 'react-redux';
-import { createTask, likeTask } from '../../../slice/task';
+import { appActions } from '../../../slice/task';
 import { selectsTasks } from '../../../slice/task/selector';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
@@ -12,12 +12,12 @@ const PostList: FC = () => {
   const postData = useSelector(selectsTasks);
 
   const handleCreate = (data: any) => {
-    dispatch(createTask(data.content));
+    dispatch(appActions.createTask(data.content));
     reset();
   };
 
   const handleLike = (data: any) => {
-    dispatch(likeTask(data));
+    dispatch(appActions.likeTask(data));
   };
 
   return (

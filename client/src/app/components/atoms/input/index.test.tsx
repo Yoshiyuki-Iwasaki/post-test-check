@@ -1,4 +1,4 @@
-import reducer, { createTask } from '../../../slice/task';
+import reducer, { appActions } from '../../../slice/task';
 
 test('should return the initial state', () => {
   expect(reducer(undefined, {})).toEqual({
@@ -19,7 +19,9 @@ test('should return the initial state', () => {
 
 test('should handle a todo being added to an empty list', () => {
   const previousState: any = [];
-  expect(reducer(previousState[0], createTask('Run the tests'))).toEqual({
+  expect(
+    reducer(previousState[0], appActions.createTask('Run the tests'))
+  ).toEqual({
     idCount: 2,
     tasks: [
       {

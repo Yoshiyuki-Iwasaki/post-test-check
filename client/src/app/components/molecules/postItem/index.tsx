@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { useDispatch } from 'react-redux';
-import { removeTask } from '../../../slice/task';
+import { appActions } from '../../../slice/task';
 import Presenter from './presenter';
 import { PostItemType } from './type';
 
@@ -10,7 +10,7 @@ const PostItem: FC<PostItemType> = ({ removeFlag, postData, handleLike }) => {
     <Presenter
       removeFlag={removeFlag}
       postData={postData}
-      handleRemove={() => dispatch(removeTask(postData))}
+      handleRemove={() => dispatch(appActions.removeTask(postData))}
       handleLike={handleLike}
     />
   );

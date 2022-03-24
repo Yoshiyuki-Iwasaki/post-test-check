@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import PostItem from '../../components/molecules/postItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectsTasks } from '../../slice/task/selector';
-import { likeTask } from '../../slice/task';
+import { appActions } from '../../slice/task';
 import { HeadBlock } from '../../components/organisms/head';
 
 const PostPage: FC = () => {
   const postData = useSelector(selectsTasks);
   const dispatch = useDispatch();
   const handleLike = (data: any) => {
-    dispatch(likeTask(data));
+    dispatch(appActions.likeTask(data));
   };
   return (
     <>

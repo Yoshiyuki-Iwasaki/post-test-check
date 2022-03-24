@@ -1,4 +1,4 @@
-import reducer, { likeTask } from '../../../slice/task';
+import reducer, { appActions } from '../../../slice/task';
 
 test('should return the initial state', () => {
   expect(reducer(undefined, {})).toEqual({
@@ -35,7 +35,7 @@ test('should handle a todo being added to an empty list', () => {
     },
   ];
   expect(
-    reducer(previousState[0], likeTask(previousState[0].tasks[0]))
+    reducer(previousState[0], appActions.likeTask(previousState[0].tasks[0]))
   ).toEqual({
     idCount: 1,
     tasks: [
