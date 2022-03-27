@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import moment from 'moment';
+const now = moment();
+const nowFormat = now.format('YYYY-MM-DD');
 export interface TaskState {
   // taskが何個あるのかを管理する
   idCount: number;
@@ -20,7 +22,7 @@ const initialState: TaskState = {
     {
       id: 1,
       username: 'username1',
-      date: 'date1',
+      date: '2022-03-27',
       content:
         '投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容',
       likeState: false,
@@ -39,7 +41,7 @@ export const taskSlice = createSlice({
       const newTask = {
         id: state.idCount,
         username: 'username1',
-        date: 'date1',
+        date: nowFormat,
         content: action.payload,
         likeState: false,
         likeCount: 0,
